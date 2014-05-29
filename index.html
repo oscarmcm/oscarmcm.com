@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <title>oscarmcm.com</title>
+    <meta name="description" content="Personal Site Of Oscar Martin Cortez Martinez">
+    <meta name="author" content="Oscar Martin Cortez Martinez">
+    <meta name="keywords" content="Site, Skrollr, Portafolio">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="libs/text_rotator/simpletextrotator.css">
+</head>
+<body>
+	<div id="intro">
+		<div class="content">
+			<h1 class="text">Hello, I'm Oscar Cortez, a creative<br>
+			<span class="rotate"> Visionary, Developer, Enterpreneur, Analist</span> With a lot of BIG ideas</h1>
+		</div>
+	</div>
+	<div id="about">
+		
+	</div>
+	<div id="skills">
+		
+	</div>
+	<div id="works">
+		<div class="portfolioFilter"> 
+		    <a href="#" data-filter="*" class="current">All Categories</a>
+		    <a href="#" data-filter=".people">People</a>
+		    <a href="#" data-filter=".places">Places</a>
+		    <a href="#" data-filter=".food">Food</a>
+		    <a href="#" data-filter=".objects">Objects</a> 
+		</div>
+ 
+		<div class="portfolioContainer">		 
+		    <div class="objects">
+		        <img src="img/port.jpg" alt="image">
+		    </div>
+		 
+		    <div class="people places">
+		        <img src="img/port.jpg" alt="image">
+		    </div>    
+		 
+		    <div class="food">
+		        <img src="img/port.jpg" alt="image">
+		    </div>
+		     
+		    <div class="people places">
+		        <img src="img/port.jpg" alt="image">
+		    </div>
+		 
+		    <div class="places objects">
+		        <img src="img/port.jpg" alt="image">
+		    </div>
+		 
+		    <div class="people food objects">
+		        <img src="img/port.jpg" alt="image">
+		    </div>
+		 
+		    <div class="food objects">
+		        <img src="img/port.jpg" alt="image">
+		    </div>    
+		     
+		    <div class="food">
+		        <img src="img/port.jpg" alt="image">
+		    </div>		 
+		</div>
+	</div>
+	<div id="quote">
+		
+	</div>
+	<div id"contact">
+		<div class="terminal-main">
+			<div class="terminal-header">
+				<span class="terminal-header-text">oscarmcm - bash</span>
+			</div>
+			<div class="terminal-promt">
+				<div class="terminal-text">
+					<p>
+				      Last login: <span id="today"></span><br>
+				      Oscar-Cortez-MacBook:~ $ See instructions below to get to know me<br>
+				      Oscar-Cortez-MacBook:~ $ Double tap 'tab' for commands, type 'clear' to restart<br>
+				    </p>
+					<div id="term"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="libs/jquery/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!--Skrollr scripts-->
+	<script type="text/javascript" src="libs/skrollr/skrollr.min.js"></script>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="../skrollr-ie/dist/skrollr.ie.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript">
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+	</script>
+	<!--Text Rotator scripts-->
+	<script type="text/javascript" src="libs/text_rotator/simpletextrotator.min.js"></script>
+	<script type="text/javascript">	
+	  $(document).ready(function(){
+			$(".text .rotate").textrotator({
+        animation: "fade",
+        speed: 1000
+    	});
+	});
+	</script>
+	<!--Isotope scripts-->
+	<script type="text/javascript" src="libs/isotope/isotope.pkgd.min.js"></script>
+	<script type="text/javascript">
+	$(window).load(function(){
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
+ 
+    $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    }); 
+});
+	</script>
+	<!--Terminal scripts-->
+    <script type="text/javascript" src="libs/terminal/jquery.mousewheel-min.js"></script>
+    <script type="text/javascript" src="libs/terminal/jquery.terminal.min.js"></script>
+	<script type="text/javascript">
+var d3=new Date();
+var t=d3.toLocaleTimeString();
+document.getElementById("today").innerHTML=d3;
+
+
+var myVar=setInterval(function(){myTimer()},1000);
+
+function myTimer(){
+  var d2=new Date('8/23/2013');
+  var dif = d2.getTime()
+  var d1=new Date();
+  var t=d1.toLocaleTimeString();
+  
+  // Number of milliseconds since 1/15/2013 divided by sec / min / 
+  var days = ((Math.abs(d1.getTime()) - Math.abs(d2.getTime()))/60/60/24/1000).toFixed(5)
+  var seconds = numberWithCommas(((d1.getTime() - d2.getTime())/1000).toFixed(0))
+  document.getElementById("days2").innerHTML=days;
+  //document.getElementById("seconds").innerHTML=seconds;
+  
+
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+}
+
+$('#term').terminal({
+    
+    cd: function(a) {
+        this.echo(location.href ="http://"+a)
+    },
+
+    why_i_quit: function() {
+        this.echo(location.href ="https://medium.com/what-i-learned-today/fa128509b99b")
+    },
+
+    what_is_flock: function() {
+        this.echo(location.href ="https://medium.com/look-what-i-made/4e667ad7a098")
+    },
+
+    websites: function() {
+        this.echo("Below are my favorite website:\nhttp://dribbble.com\nhttp://news.ycombinator.com\nhttp://unsplash.com")
+    },
+    
+    work_history: function() {
+        this.echo("Right out of school I worked for SunTrust Robinson Humphrey as an i-banking analyst.\nI helped Financial Services \&amp; Technology companies raise capital and execute M\&amp;A opps.")
+    },
+
+    terminal_color: function(a) {
+        if (a == 'normal') {
+          $(".term").css("background-color", '#33485D');
+          $("#term").css("background-color", '#33485D');
+        } else {
+          $(".term,").css("background-color", a);
+          $("#term").css("background-color", a);
+        }
+    },
+
+    pwd: function() {
+        this.echo("/Users/oscarmcm/code/personal_homepage")
+    },
+
+   '\n': function() {
+        this.echo()
+    },
+
+    music: function() {
+        this.echo("Below are some of my favorite bands:\nMichael Franti \&amp; Spearhead, Bruce Springsteen, Passion Pit, Vampire Weekend, Queen\nand all mashups")
+    },
+
+    ls: function() {
+        this.echo("js\ncss\nimg\nlibs")
+    },
+
+    learn_to_code: function() {
+        this.echo(location.href ="https://medium.com/on-coding/41fe6fc1b8df")  
+    },
+
+    hn: function() {
+        this.echo("Thanks for all the awesome comments and suggestions! Check out the post below:\nhttps://news.ycombinator.com/item?id=5744558")
+    },
+
+    hello: function() {
+        this.echo("hey! welcome to my site!" )
+    },
+
+    // font_color: function(a) {
+    //    if (a == 'normal') {
+    //      $(".terminal_font").css("color", '#19FE54');
+    //      $(".terminal-output > div, .terminal .terminal-output div div, .terminal, .terminal-output, div.terminal-output, .cmd, .prompt, span.inverted, #today, .cursor, .inverted, .terminal-output > div").css("color", '#19FE54');
+    //    } else {
+    //      $("span, .terminal_font").css("color", a);
+    //      $("span, .terminal-output > div, .terminal .terminal-output div div, .terminal, .terminal-output, div.terminal-output, .cmd, .prompt, span.inverted, #today, .cursor, .inverted, .terminal-output > div").css("color", a);
+    //    }
+    // },
+
+    education: function() {
+        this.echo("I went to Emory University in Atlanta, GA.  I studied Economics, Mathematics,\nand Philosophy and was a center defender on the varsity soccer team.")
+    },
+
+    books: function() {
+        this.echo("Some of my favorite books:\nThe Omnivore's Dilemma, anything by Chuck Klosterman, The Fountainhead")
+    },
+
+    background_color: function(a) {
+        if (a == 'normal')
+          $("body").css("background-color", '#3498DB');
+        else
+          $("body").css("background-color", a);
+    },
+
+    '': function() {
+        this.echo()
+    },
+
+}, { prompt: 'Oscar-Cortez-MacBook:~ $ ', greetings: false, tabcompletion: true });
+</script>
+</body>
