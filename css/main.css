@@ -1,0 +1,250 @@
+#intro {
+	background-image: url(../img/header-bg.jpg);
+	background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+.content {
+	background-color: rgba(255,255,255,0.8);
+	color: #74c7d5;
+	font-size: 22px;
+}
+#service{
+	background-color: #2C3E50;
+}
+#about {
+	background-color: #3498db;
+}
+#skills {
+	background-color: #44c650;
+}
+#works {
+	background-color: #e74c3c;
+}
+.portfolioFilter a { 
+    margin-right: 10px; 
+    color:#666;
+    text-decoration:none;
+}
+ 
+.portfolioFilter a.current { 
+    font-weight:bold;
+}
+ 
+img {
+    margin:5px;
+}
+ 
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+ 
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+#quote {
+	background-color: #363B48;
+}
+#contact {
+	background-color: #f1f1f1;
+}
+.terminal-main{
+	width: 1200px;
+	height: auto;
+}
+.terminal-header {
+	width: inherit;
+    height: inherit;
+    background-color: #DEDEDE;
+    margin: 0px auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+}
+.terminal-header-text {
+	color: #A5A5A5;
+    font-family: "prestige-elite-std",serif;
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+}
+.terminal-promt {
+	width: inherit;
+	height: inherit;
+	background-color: #33485D;
+	margin: 0px auto;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.terminal-text{
+	font-family: "prestige-elite-std", serif;
+	font-size: 22px;
+	color: #19fe54;
+	margin: 0 auto;
+	padding: 20px;
+	font-weight: 700;
+}
+
+/*=============================================================
+ * This css file is part of jquery terminal
+ *
+ * Licensed under GNU LGPL Version 3 license
+ * Copyright (c) 2011-2013 Jakub Jankiewicz <http://jcubic.pl>
+ *
+ ==============================================================*/
+.terminal .terminal-output .format, .cmd .format,
+.cmd .prompt, .cmd .prompt div, .terminal .terminal-output div div{
+    display: inline-block;
+}
+.cmd .clipboard {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.01;
+    filter: alpha(opacity = 0.01);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.01);
+    width: 2px;
+}
+.cmd > .clipboard {
+    position: fixed;
+}
+.terminal {
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+.cmd {
+    padding: 0;
+    margin: 0;
+    height: 1.3em;
+    /*margin-top: 3px; */
+}
+.cmd .cursor.blink {
+    -webkit-animation: blink 1s infinite steps(1, start);
+       -moz-animation: blink 1s infinite steps(1, start);
+        -ms-animation: blink 1s infinite steps(1, start);
+            animation: blink 1s infinite steps(1, start);
+}
+@keyframes blink {
+  0%, 100% {
+        background-color: #33485D;
+        color: #19fe54;
+  }
+  50% {
+        background-color: #bbb; /* not #19fe54 because it's seem there is Google Chrome bug */
+        color: #33485D;
+  }
+}
+@-webkit-keyframes blink {
+  0%, 100% {
+        background-color: #33485D;
+        color: #19fe54;
+  }
+  50% {
+        background-color: #bbb;
+        color: #33485D;
+  }
+}
+@-ms-keyframes blink {
+  0%, 100% {
+        background-color: #33485D;
+        color: #19fe54;
+  }
+  50% {
+        background-color: #bbb;
+        color: #33485D;
+  }
+}
+@-moz-keyframes blink {
+  0%, 100% {
+        background-color: #33485D;
+        color: #19fe54;
+  }
+  50% {
+        background-color: #bbb;
+        color: #33485D;
+  }
+}
+.terminal .terminal-output div div, .cmd .prompt {
+    display: block;
+    line-height: 14px;
+    height: auto;
+    padding-bottom: 15px;
+}
+.cmd .prompt {
+    float: left;
+}
+.terminal, .cmd {
+    font-family: serif, monospace;
+
+    color: #19fe54;
+    background-color: #33485D;
+    font-size: 22px;
+    line-height: 14px;
+}
+.terminal-output > div {
+    /*padding-top: 3px;*/
+    min-height: 14px;
+}
+.terminal .terminal-output div span {
+    display: inline-block;
+}
+.cmd span {
+    float: left;
+    /*display: inline-block; */
+}
+.terminal .inverted, .cmd .inverted, .cmd .cursor.blink {
+    background-color: #19fe54;
+    color: #33485D;
+}
+.terminal .terminal-output div div::-moz-selection,
+.terminal .terminal-output div span::-moz-selection,
+.terminal .terminal-output div div a::-moz-selection {
+    background-color: #19fe54;
+    color: #33485D;
+}
+.terminal .terminal-output div div::selection,
+.terminal .terminal-output div div a::selection,
+.terminal .terminal-output div span::selection,
+.cmd > span::selection,
+.cmd .prompt span::selection {
+    background-color: #19fe54;
+    color: #33485D;
+}
+.terminal .terminal-output div.error, .terminal .terminal-output div.error div {
+    color: red;
+}
+.tilda {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1100;
+}
+.clear {
+    clear: both;
+}
+.terminal a {
+    color: #0F60FF;
+}
+.terminal a:hover {
+    color: red;
+}
