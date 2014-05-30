@@ -4,7 +4,7 @@
 <!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,85 +16,264 @@
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="libs/text_rotator/simpletextrotator.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap.min.css">  
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 <body>
 	<div id="intro">
-		<div class="content">
-			<h1 class="text">Hello, I'm Oscar Cortez, a creative<br>
-			<span class="rotate"> Visionary, Developer, Enterpreneur, Analist</span> With a lot of BIG ideas</h1>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+						<!-- Carousel indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>   
+						<!-- Carousel items -->
+						<div class="carousel-inner">
+							<div class="active item">
+								<img src="img/header-bg.jpg">
+								
+							</div>
+							<div class="item">
+								<img src="img/header-bg.jpg">
+								
+							</div>
+							<div class="item">
+								<img src="img/header-bg.jpg">
+								
+							</div>
+						</div>
+						<!-- Carousel nav -->
+						<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="carousel-control right" href="#myCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+					<!--finaliza el carousel --
+					<div class="content">
+						<h1 class="text">Hello, I'm Oscar Cortez, a creative<br>
+						<span class="rotate"> Visionary, Developer, Enterpreneur, Analist</span> With a lot of BIG ideas</h1>
+					</div>-->
+				</div>
+			</div>
 		</div>
 	</div>
 	<div id="about">
-		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-4">
+							<img class="img-responsive img-circle about-img" src="img/me.jpg">
+						</div>
+						<div class="col-md-8">
+							<div class="about-text">
+								<p>Hello, I'm Oscar Cortez...</p>
+								<p>I'm a systems engineer, from <span>Managua-Nicaragua.</span> I'm a passionated and evangelist of the free software and open sources tools. GNU/Linux user since my birth. Lover of HTML5, Ruby on Rails and Django, I Want to create powerful apps for the web, mobiles and desktop.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+	<div id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">							
+					<h1 class="services-title">THE <span>SERVICES</span> I OFFER</h1>					
+					<div class="row services">
+						<div class="col-md-3 text-center">
+							<a href="#fake" class="icon"><i class="icon-flag"></i></a>
+							<h2>Branding</h2>
+						</div>
+						<div class="col-md-3 details">
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+						</div>
+						<div class="col-md-3 text-center">
+							<a href="" class="icon"><i class="icon-code"></i></a>
+							<h2>Development</h2>
+						</div>
+						<div class="col-md-3 details">
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+						</div>
+					</div><!--End row (top) -->
+					
+					<div class="row line visible-md visible-lg">
+						<div class="col-md-3"><span class="spot"></span></div>
+						<div class="col-md-3"><span class="spot"></span></div>
+						<div class="col-md-3"><span class="spot"></span></div>
+						<div class="col-md-3"><span class="spot"></span></div>
+					</div><!--End row -->
+					
+					<div class="row services bottom-row ">
+						<div class="col-md-3 text-center col-md-push-3">
+							<h2>Design</h2>
+							<a href="" class="icon"><i class="icon-pencil"></i></a>
+						</div>
+						<div class="col-md-3 details col-md-pull-3">
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+						</div>
+						<div class="col-md-3 text-center  col-md-push-3">
+							<h2>Rocket Science</h2>
+							<a href="" class="icon"><i class="fa fa-rocket"></i></a>
+						</div>
+						<div class="col-md-3 details  col-md-pull-3">
+							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+						</div>
+					</div><!--End row (bottom)-->					
+				</div><!--End container -->			
+			</div>
+		</div>
 	</div>
 	<div id="skills">
-		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+					<h1 class="skills-title">THE <span>SKILLS</span> I HAVE</h1>
+						<div class="col-md-3 text-center">
+							<span class="chart" data-percent="90">
+								<span class="chart-percent">90</span>
+							</span>
+							<br>
+							<span class="chart-text">HTML5/JS/CSS3/PHP</span>
+						</div>
+						<div class="col-md-3 text-center">
+							<span class="chart" data-percent="55">
+								<span class="chart-percent">55</span>
+							</span>
+							<br>
+							<span class="chart-text">Ruby/Python</span>
+						</div>
+						<div class="col-md-3 text-center">
+							<span class="chart" data-percent="74">
+								<span class="chart-percent">74</span>
+							</span>
+							<br>
+							<span class="chart-text">Wordpress/Drupal/Joomla</span>
+						</div>
+						<div class="col-md-3 text-center">
+							<span class="chart" data-percent="66">
+								<span class="chart-percent">66</span>
+							</span>
+							<br>
+							<span class="chart-text">Android/iOS/WP8</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
 	</div>
 	<div id="works">
-		<div class="portfolioFilter"> 
-		    <a href="#" data-filter="*" class="current">All Categories</a>
-		    <a href="#" data-filter=".people">People</a>
-		    <a href="#" data-filter=".places">Places</a>
-		    <a href="#" data-filter=".food">Food</a>
-		    <a href="#" data-filter=".objects">Objects</a> 
-		</div>
- 
-		<div class="portfolioContainer">		 
-		    <div class="objects">
-		        <img src="img/port.jpg" alt="image">
-		    </div>
-		 
-		    <div class="people places">
-		        <img src="img/port.jpg" alt="image">
-		    </div>    
-		 
-		    <div class="food">
-		        <img src="img/port.jpg" alt="image">
-		    </div>
-		     
-		    <div class="people places">
-		        <img src="img/port.jpg" alt="image">
-		    </div>
-		 
-		    <div class="places objects">
-		        <img src="img/port.jpg" alt="image">
-		    </div>
-		 
-		    <div class="people food objects">
-		        <img src="img/port.jpg" alt="image">
-		    </div>
-		 
-		    <div class="food objects">
-		        <img src="img/port.jpg" alt="image">
-		    </div>    
-		     
-		    <div class="food">
-		        <img src="img/port.jpg" alt="image">
-		    </div>		 
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+				<h1 class="portfolioTitle">THE <span>WORKS</span> I AM PROUD OF</h1>
+					<div class="portfolioFilter"> 
+					    <a href="#" data-filter="*" class="current">All Categories</a>
+					    <a href="#" data-filter=".web">Web</a>
+					    <a href="#" data-filter=".mobile">Mobile</a>
+					    <a href="#" data-filter=".desktop">Desktop</a>
+					    <a href="#" data-filter=".objects">Objects</a> 
+					</div> 
+					<div class="portfolioContainer">		 
+					    <div class="objects">
+					        <img src="img/port.jpg" alt="image">
+					    </div>
+					 
+					    <div class="web places">
+					        <img src="img/port.jpg" alt="image">
+					    </div>    
+					 
+					    <div class="mobile">
+					        <img src="img/port.jpg" alt="image">
+					    </div>
+					     
+					    <div class="web mobile">
+					        <img src="img/port.jpg" alt="image">
+					    </div>
+					 
+					    <div class="desktop objects">
+					        <img src="img/port.jpg" alt="image">
+					    </div>
+					 
+					    <div class="desktop mobile objects">
+					        <img src="img/port.jpg" alt="image">
+					    </div>
+					 
+					    <div class="web objects">
+					        <img src="img/port.jpg" alt="image">
+					    </div>    
+					     
+					    <div class="desktop">
+					        <img src="img/port.jpg" alt="image">
+					    </div>		 
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div id="quote">
-		
-	</div>
-	<div id"contact">
-		<div class="terminal-main">
-			<div class="terminal-header">
-				<span class="terminal-header-text">oscarmcm - bash</span>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Termina Esto Pronto</h3>
+					<span>Oscar Cortez</span>
+				</div>
 			</div>
-			<div class="terminal-promt">
-				<div class="terminal-text">
-					<p>
-				      Last login: <span id="today"></span><br>
-				      Oscar-Cortez-MacBook:~ $ See instructions below to get to know me<br>
-				      Oscar-Cortez-MacBook:~ $ Double tap 'tab' for commands, type 'clear' to restart<br>
-				    </p>
-					<div id="term"></div>
+		</div>		
+	</div>
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="terminal-main">
+						<div class="terminal-header">
+							<span class="terminal-header-text">oscarmcm - bash</span>
+						</div>
+						<div class="terminal-promt">
+							<div class="terminal-text">
+								<p>
+							      Last login: <span id="today"></span><br>
+							      Oscar-Cortez-MacBook:~ $ See instructions below to get to know me<br>
+							      Oscar-Cortez-MacBook:~ $ Double tap 'tab' for commands, type 'clear' to restart<br>
+							    </p>
+								<div id="term"></div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="libs/jquery/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<!--bootstrap scripts-->
+	<script type="text/javascript" src="libs/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+            $('#myCarousel').carousel()
+        });
+    </script>
+    <!--Pie Charts scripts-->
+    <script type="text/javascript" src="libs/piechart/jquery.easypiechart.min.js"></script>
+    <script type="text/javascript">
+	$(function() {
+	    $('.chart').easyPieChart({
+	       scaleColor: false,
+	       lineWidth: 10,
+	       size: 180,
+	       lineCap: "square",
+	    });
+	});
+	</script>
 	<!--Skrollr scripts-->
 	<script type="text/javascript" src="libs/skrollr/skrollr.min.js"></script>
 	<!--[if lt IE 9]>
@@ -149,38 +328,21 @@
             }
          });
          return false;
-    }); 
-});
+    	}); 
+	});
 	</script>
 	<!--Terminal scripts-->
     <script type="text/javascript" src="libs/terminal/jquery.mousewheel-min.js"></script>
     <script type="text/javascript" src="libs/terminal/jquery.terminal.min.js"></script>
 	<script type="text/javascript">
-var d3=new Date();
-var t=d3.toLocaleTimeString();
-document.getElementById("today").innerHTML=d3;
+	document.getElementById("today").innerHTML=d;
+	var d = new Date();
+	var month = d.getMonth()+1;
+	var day = d.getDate();
 
-
-var myVar=setInterval(function(){myTimer()},1000);
-
-function myTimer(){
-  var d2=new Date('8/23/2013');
-  var dif = d2.getTime()
-  var d1=new Date();
-  var t=d1.toLocaleTimeString();
-  
-  // Number of milliseconds since 1/15/2013 divided by sec / min / 
-  var days = ((Math.abs(d1.getTime()) - Math.abs(d2.getTime()))/60/60/24/1000).toFixed(5)
-  var seconds = numberWithCommas(((d1.getTime() - d2.getTime())/1000).toFixed(0))
-  document.getElementById("days2").innerHTML=days;
-  //document.getElementById("seconds").innerHTML=seconds;
-  
-
-  function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }
-}
-
+	var output = d.getFullYear() + '-' +
+	    ((''+month).length<2 ? '0' : '') + month + '-' +
+	    ((''+day).length<2 ? '0' : '') + day;
 $('#term').terminal({
     
     cd: function(a) {
@@ -273,3 +435,4 @@ $('#term').terminal({
 }, { prompt: 'Oscar-Cortez-MacBook:~ $ ', greetings: false, tabcompletion: true });
 </script>
 </body>
+</html>
