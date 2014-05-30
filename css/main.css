@@ -1,40 +1,163 @@
 #intro {
-	background-image: url(../img/header-bg.jpg);
-	background-repeat: no-repeat;
-    background-position: center;
-    height: 400px;
+	
 }
 .content {
 	background-color: rgba(255,255,255,0.8);
 	color: #74c7d5;
 	font-size: 22px;
 }
-#service{
-	background-color: #2C3E50;
+#services{
+	background-color: #;
+}
+.services-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 36px;
+    text-align: center;
+}
+.services-title > span {
+    font-weight: bold;
+    font-size: 52px;
+}
+.services .icon {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 24px;
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    font-size: 72px;
+    line-height: 130px;
+    color: #ccc;
+    background: none;
+    border: 10px solid #74C7D5;
+    border-radius: 50%;
+    z-index: 1;
+    -webkit-transition: color 0.2s ease-in;
+    transition: color 0.2s ease-in;
+}
+.row.line {
+    height: 6px;
+    background: #74C7D5;
+    margin-bottom: 24px;
+}
+.spot {
+    margin: -7px auto;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #74C7D5;
+    border: 5px solid #fff;
+    border-radius: 50%;
 }
 #about {
 	background-color: #3498db;
 }
+.about-img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 12px 0px 0px 12px rgba(255,255,255,0.2), -12px 0px 0px 12px rgba(255,255,255,0.2);
+}
+.about-text {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    color: #fff;
+}
+.about-text > p:first-child {
+    font-weight: bold;
+}
+.about-text > p > span {
+    color: #;
+    font-size: 33px;
+    font-weight: bold;
+}
 #skills {
 	background-color: #44c650;
+}
+.skills-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 36px;
+    text-align: center;
+}
+.skills-title > span {
+    font-weight: bold;
+    font-size: 52px;
+}
+.chart {
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.chart-percent {
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2;
+  font-size: 70px;
+}
+.chart-percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+.chart-text{
+    font-size: 23px;
+    font-weight: bold;
 }
 #works {
 	background-color: #e74c3c;
 }
+.portfolioTitle {
+	text-align: center;
+    color: #fff;
+}
+.portfolioTitle > span {
+    font-weight: bold;
+    font-size: 52px;
+}
+.portfolioFilter {
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 25px;
+}
 .portfolioFilter a { 
     margin-right: 10px; 
-    color:#666;
+    color:#000;
     text-decoration:none;
-}
- 
+    background-color: #fff;
+    padding: 12px;
+    border-bottom: 3px solid rgb(221,221,213);
+    border-radius: 2px;
+} 
 .portfolioFilter a.current { 
     font-weight:bold;
 }
- 
-img {
-    margin:5px;
+.portfolioFilter a:hover {
+	background-color: #eee;
+     text-decoration:none;   
 }
- 
+.portfolioContainer {
+	margin-right: 5px;
+	margin-left: 5px;	
+}
+.portfolioContainer > div {
+	margin-right: inherit;
+	margin-left: inherit;
+}
+.portfolioContainer > div > img {
+	width: 250px;
+	height: 300px;
+	margin: 5px;
+}
 .isotope-item {
     z-index: 2;
 }
@@ -67,8 +190,10 @@ img {
 	background-color: #f1f1f1;
 }
 .terminal-main{
-	width: 1200px;
+	width: 100%;
 	height: auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 .terminal-header {
 	width: inherit;
