@@ -21,10 +21,18 @@
 
 </head>
 <body>
-	<div id="intro">
+
+	<div id="intro" data-0="opacity:1;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
+					<div class="overlay">
+						<div class="content">
+							<h1 class="text">Hello, I'm Oscar Cortez, a creative<br>
+							<span class="rotate"> Developer,Enterpreneur,Visionary,Analist</span> With a lot of BIG ideas</h1>
+							<a href="#about">Scroll Down</a>
+						</div>
+					</div>
 					<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
 						<!-- Carousel indicators -->
 						<ol class="carousel-indicators">
@@ -55,30 +63,34 @@
 							<span class="glyphicon glyphicon-chevron-right"></span>
 						</a>
 					</div>
-					<!--finaliza el carousel --
-					<div class="content">
-						<h1 class="text">Hello, I'm Oscar Cortez, a creative<br>
-						<span class="rotate"> Visionary, Developer, Enterpreneur, Analist</span> With a lot of BIG ideas</h1>
-					</div>-->
+					<!--finaliza el carousel -->
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="about">
+
+	<div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);height:5px;" data-end="width:100%;background:hsl(920, 100%, 50%);height:5px;"></div>
+	<div id="about" >
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="row">
-						<div class="col-md-4">
-							<img class="img-responsive img-circle about-img" src="img/me.jpg">
-						</div>
-						<div class="col-md-8">
-							<div class="about-text">
+						<div class="col-md-4">					
+							<div data-0="transform:translate(-300px,400px);" data-500="transform:translate(23px,121px);">
+								<img src="img/reports.png">
+								<img src="img/coffee.png">
+							</div>
+							<div class="about-text" data-0="transform:translate(900px,-100px);" data-500="transform:translate(320px,1px);">
 								<p>Hello, I'm Oscar Cortez...</p>
 								<p>I'm a systems engineer, from <span>Managua-Nicaragua.</span> I'm a passionated and evangelist of the free software and open sources tools. GNU/Linux user since my birth. Lover of HTML5, Ruby on Rails and Django, I Want to create powerful apps for the web, mobiles and desktop.</p>
 							</div>
+							<div data-0="transform:translate(400px,-200px);" data-500="transform:translate(744px,-425px);">
+								<img src="img/pc.png">
+								<img src="img/mouse.png">
+								<img src="img/tel.png">
+							</div>
 						</div>
-					</div>
+					</div>						
 				</div>
 			</div>		
 		</div>
@@ -87,16 +99,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">							
-					<h1 class="services-title">THE <span>SERVICES</span> I OFFER</h1>					
+					<h1 class="services-title" data-970="transform:scale(0);" data-1500="transform:scale(1); ">THE <span>SERVICES</span> I OFFER</h1>					
 					<div class="row services">
-						<div class="col-md-3 text-center">
+						<div class="col-md-3 text-center" data-990="transform:translate(-900px,0px);" data-1500="transform:translate(0px,0px);">
 							<a href="#fake" class="icon"><i class="icon-flag"></i></a>
-							<h2>Branding</h2>
+							<h2>Analist</h2>
 						</div>
 						<div class="col-md-3 details">
 							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
 						</div>
-						<div class="col-md-3 text-center">
+						<div class="col-md-3 text-center" data-990="transform:translate(900px,0px);" data-1500="transform:translate(0px,0px);">
 							<a href="" class="icon"><i class="icon-code"></i></a>
 							<h2>Development</h2>
 						</div>
@@ -105,7 +117,7 @@
 						</div>
 					</div><!--End row (top) -->
 					
-					<div class="row line visible-md visible-lg">
+					<div class="row line visible-md visible-lg" data-1600="width:0%; opacity:0;" data-1650="width:50%; opacity:0.5;" data-1700="width:100%; opacity:1">
 						<div class="col-md-3"><span class="spot"></span></div>
 						<div class="col-md-3"><span class="spot"></span></div>
 						<div class="col-md-3"><span class="spot"></span></div>
@@ -113,14 +125,14 @@
 					</div><!--End row -->
 					
 					<div class="row services bottom-row ">
-						<div class="col-md-3 text-center col-md-push-3">
+						<div class="col-md-3 text-center col-md-push-3" data-1650="transform:translate(-900px,0px);" data-1800="transform:translate(0px,0px);">
 							<h2>Design</h2>
 							<a href="" class="icon"><i class="icon-pencil"></i></a>
 						</div>
 						<div class="col-md-3 details col-md-pull-3">
 							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
 						</div>
-						<div class="col-md-3 text-center  col-md-push-3">
+						<div class="col-md-3 text-center  col-md-push-3" data-1650="transform:translate(900px,0px);" data-1800="transform:translate(0px,0px);">
 							<h2>Rocket Science</h2>
 							<a href="" class="icon"><i class="fa fa-rocket"></i></a>
 						</div>
@@ -253,6 +265,8 @@
 			</div>
 		</div>
 	</div>
+	<div id="scrollbar" data-0="top:0%;margin-top:2px;" data-end="top:100%;margin-top:-52px;"></div>
+
 	<script type="text/javascript" src="libs/jquery/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!--bootstrap scripts-->
@@ -280,22 +294,14 @@
 	<script type="text/javascript" src="../skrollr-ie/dist/skrollr.ie.min.js"></script>
 	<![endif]-->
 	<script type="text/javascript">
-	var s = skrollr.init({
-		edgeStrategy: 'set',
-		easing: {
-			WTF: Math.random,
-			inverted: function(p) {
-				return 1-p;
-			}
-		}
-	});
+	var s = skrollr.init();
 	</script>
 	<!--Text Rotator scripts-->
 	<script type="text/javascript" src="libs/text_rotator/simpletextrotator.min.js"></script>
 	<script type="text/javascript">	
 	  $(document).ready(function(){
 			$(".text .rotate").textrotator({
-        animation: "fade",
+        animation: "flipUp",
         speed: 1000
     	});
 	});
