@@ -1,10 +1,40 @@
+#progress {
+    height:2%;
+    background:#444;
+    bottom:0;
+    z-index:200;
+}
+
+
+#scrollbar {
+    position:fixed;
+    right:2px;
+    height:50px;
+    width:6px;
+    background:#444;
+    background:rgba(0,0,0,0.6);
+    border:1px solid rgba(255,255,255,0.6);
+    z-index:300;
+    border-radius:3px;
+}
+
+.skrollr-desktop #scrollbar {display:none;}
+
 #intro {
 	
+}
+.overlay { 
+  position:absolute;
+  z-index:12;
+  top:50%;
+  left:0;
+  width: 100%;
 }
 .content {
 	background-color: rgba(255,255,255,0.8);
 	color: #74c7d5;
 	font-size: 22px;
+    text-align: center;
 }
 #services{
 	background-color: #;
@@ -62,7 +92,7 @@
 .about-text {
     margin-top: 25px;
     margin-bottom: 25px;
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
 }
 .about-text > p:first-child {
