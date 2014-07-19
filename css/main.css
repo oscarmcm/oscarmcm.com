@@ -1,27 +1,8 @@
-#progress {
-    height:2%;
-    background:#444;
-    bottom:0;
-    z-index:200;
+section.full-page{
+    width: 100%
 }
-
-
-#scrollbar {
-    position:fixed;
-    right:2px;
-    height:50px;
-    width:6px;
-    background:#444;
-    background:rgba(0,0,0,0.6);
-    border:1px solid rgba(255,255,255,0.6);
-    z-index:300;
-    border-radius:3px;
-}
-
-.skrollr-desktop #scrollbar {display:none;}
-
 #intro {
-	
+	z-index: 30;
 }
 .overlay { 
   position:absolute;
@@ -36,8 +17,65 @@
 	font-size: 22px;
     text-align: center;
 }
+nav {
+  position: relative;
+  width: 928px;
+  padding: 2em;
+  margin-left: -14px;
+  border-top-left-radius: 14px 7px;
+  border-top-right-radius: 14px 7px;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+.nav-left {
+  position: absolute;
+  left: 0;  bottom: -14px;
+  width: 14px;  height: 14px;
+  background: #848a6a;
+  border-bottom-left-radius: 100% 50%;
+}
+ 
+.nav-left::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 66%;  height: 66%;
+  background: #000;
+  border-top-left-radius: 100% 50%;
+  border-bottom-left-radius: 100% 50%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+}
+#about {
+    background-color: #3498db;
+    z-index: 25;
+}
+.about-img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 12px 0px 0px 12px rgba(255,255,255,0.2), -12px 0px 0px 12px rgba(255,255,255,0.2);
+}
+.about-text {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #fff;
+}
+.about-text > p:first-child {
+    font-weight: bold;
+}
+.about-text > p > span {
+    color: #fff;
+    font-size: 33px;
+    font-weight: bold;
+}
 #services{
-	background-color: #;
+	background-color: #fff;
+    z-index: 20;
 }
 .services-title {
     margin-top: 25px;
@@ -81,28 +119,7 @@
     border: 5px solid #fff;
     border-radius: 50%;
 }
-#about {
-	background-color: #3498db;
-}
-.about-img {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    box-shadow: 12px 0px 0px 12px rgba(255,255,255,0.2), -12px 0px 0px 12px rgba(255,255,255,0.2);
-}
-.about-text {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 20px;
-    color: #fff;
-}
-.about-text > p:first-child {
-    font-weight: bold;
-}
-.about-text > p > span {
-    color: #;
-    font-size: 33px;
-    font-weight: bold;
-}
+
 #skills {
 	background-color: #44c650;
 }
