@@ -121,7 +121,7 @@ nav li {
 }
 
 #skills {
-	background-color: #44c650;
+	background-color: #6cc04e;
 }
 .skills-title {
     margin-top: 25px;
@@ -160,14 +160,24 @@ nav li {
     font-size: 23px;
     font-weight: bold;
 }
+.cCounter{
+  margin-top: 20px;
+  padding-top: 10px;
+}
+.counter{
+  font-size: 48px;
+  font-weight: 800!important;
+  line-height: 60px;
+}
 #works {
-	background-color: #e74c3c;
+	background-color: #252525;
 }
-.portfolioTitle {
+.portfolio-title {
+  margin-top: 30px;
 	text-align: center;
-    color: #fff;
+  color: #837f7f;
 }
-.portfolioTitle > span {
+.portfolio-title > span {
     font-weight: bold;
     font-size: 52px;
 }
@@ -231,10 +241,31 @@ nav li {
     transition-property: transform, opacity;
 }
 #quote {
-	background-color: #363B48;
+	background-color: #2A2F36;
+}
+.like{
+  color: #8e939a!important;
+  text-transform: uppercase;
+  font-size: 35px!important;
+  line-height: 1.2em;
+  font-weight: 800!important;
+  padding: 35px 0;
+}
+.ticker{
+  text-transform: uppercase;
+  font-weight: 300!important;
 }
 #contact {
 	background-color: #f1f1f1;
+}
+.contact-title {
+  margin-top: 30px;
+  text-align: center;
+  color: #837f7f;
+}
+.contact-title > span {
+    font-weight: bold;
+    font-size: 52px;
 }
 .terminal-main{
 	width: 100%;
@@ -419,4 +450,21 @@ nav li {
 }
 .terminal a:hover {
     color: red;
+}
+.heart{
+  font-size: 73px;
+  color: red;
+
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-dely: 1s;
+}
+.animated{
+  -webkit-animation: 1600ms pulsate infinite alternate ease-in-out;
+  -moz-animation: 1600ms pulsate infinite alternate ease-in-out;
+  -ms-animation: 1600ms pulsate infinite alternate ease-in-out;
+  -o-animation: 1600ms pulsate infinite alternate ease-in-out;
+  animation: 1600ms pulsate infinite alternate ease-in-out;
 }

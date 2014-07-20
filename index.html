@@ -23,11 +23,11 @@
 	</head>
 	<body>
 
-		<section id="intro" class="full-page" data-0="opacity:1;" data-500="opacity:0;">
+		<section id="intro" data-0="opacity:1;" data-500="opacity:0;">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
-						<img src="img/header-bg.jpg">
+						<img class="img-responsive" src="img/header-bg.jpg">
 						<div class="overlay">
 							<div class="content">
 								<h1 class="text">Hello, I'm a creative<br>
@@ -49,6 +49,7 @@
 					<li><a href="#skills">Skills</a></li>
 					<li><a href="#works">Works</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><a href="/blog">Blog</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -59,19 +60,19 @@
 					<div class="col-md-12">
 						<div class="row">
 							<div class="col-md-4">					
-								<div data-500="transform:translate(-300px,400px); opacity:0;" data-1000="transform:translate(-223px,400px); opacity:1;">
+								<div data-500="transform:translate(-300px,400px); opacity:0;" data-1000="transform:translate(-223px,500px); opacity:1;">
 									<img src="img/reports.png">
 									<img src="img/coffee.png">
 								</div>
 							</div>
 							<div class="col-md-4">
-								<div class="about-text" data-500="transform:translate(100px,100px); opacity:0;" data-1000="transform:translate(-80px,210px); opacity:1;">
+								<div class="about-text" data-500="transform:translate(100px,100px); opacity:0;" data-1000="transform:translate(-80px,280px); opacity:1;">
 									<p>Hello, I'm Oscar Cortez...</p>
 									<p>I'm a systems engineer, from <span>Managua-Nicaragua.</span> I'm a passionated and evangelist of the free software and open sources tools. GNU/Linux user since my birth. Lover of HTML5, Ruby on Rails and Django, I Want to create powerful apps for the web, mobiles and desktop.</p>
 								</div>
 							</div>
 							<div class="col-md-4">
-								<div data-500="transform:translate(100px,100px); opacity:0;" data-1000="transform:translate(1px,25px); opacity:1;">
+								<div data-500="transform:translate(100px,100px); opacity:0;" data-1000="transform:translate(1px,45px); opacity:1;">
 									<img src="img/pc.png">
 									<img src="img/mouse.png">
 									<img src="img/tel.png">
@@ -138,7 +139,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="row">
-						<h1 class="skills-title">THE <span>SKILLS</span> I HAVE</h1>
+							<h1 class="skills-title">THE <span>SKILLS</span> I HAVE</h1>
 							<div class="col-md-3 text-center">
 								<span class="chart" data-percent="90">
 									<span class="chart-percent">90</span>
@@ -169,6 +170,22 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-md-12  text-center cCounter">
+						<div class="row">
+							<div class="col-md-4">
+								<div id="counter1" class="counter"></div>
+								<label>Pages In War &amp; Peace</label>
+							</div>
+							<div class="col-md-4">
+								<div id="counter2" class="counter"></div>
+								<label>Days Around The World</label>
+							</div>
+							<div class="col-md-4">
+								<div id="counter3" class="counter"></div>
+								<label>A Space Odyssey</label>
+							</div>						
+						</div>						
+					</div>
 				</div>
 			</div>		
 		</section>
@@ -177,7 +194,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-					<h1 class="portfolioTitle">THE <span>WORKS</span> I AM PROUD OF</h1>
+					<h1 class="portfolio-title">THE <span>WORKS</span> I AM PROUD OF</h1>
 						<div class="portfolioFilter"> 
 						    <a href="#" data-filter="*" class="current">All Categories</a>
 						    <a href="#" data-filter=".web">Web</a>
@@ -227,8 +244,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h3>Termina Esto Pronto</h3>
-						<span>Oscar Cortez</span>
+						<h1 class="like">I like <span class="ticker"></span></h1>
 					</div>
 				</div>
 			</div>		
@@ -238,6 +254,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
+						<h1 class="contact-title">YOU CAN <span>CONTACT</span> ME HERE</h1>
 						<div class="terminal-main">
 							<div class="terminal-header">
 								<span class="terminal-header-text">oscarmcm - bash</span>
@@ -257,6 +274,38 @@
 				</div>
 			</div>
 		</section>
+
+		<section id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<p>Stay connected:</p>
+						<ul>
+							<li><i class="fa fa-linkedin"><a href="">Linkedln</a></i></li>
+							<li><i class="fa fa-twitter"><a href="">Twitter</a></i></li>
+							<li><i class="fa fa-file-text-o"><a href="">Resume</a></i></li>
+							<li><i class="fa fa-skype"><a href="">Skype</a></i></li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<p>Proudly build with</p>
+						<a href="">NodeJS</a>
+						<p>Handcrafted in Nicaragua</p>
+						<li><i class="fa fa-github"><a href="">Github repo</a></i></li>					
+					</div>
+					<div class="col-md-12">
+						<div class="text-center">
+							<p>See you son</p>
+							<i class="fa fa-heart heart animated"></i>
+							<br>	
+							<a href="#intro"><i class="fa fa-chevron-circle-up"></i></a>
+							<p>copyright 2014 Oscar Cortez</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script type="text/javascript" src="libs/jquery/jquery-2.1.1.min.js"><\/script>')</script>
 		<!--bootstrap scripts-->
@@ -278,8 +327,17 @@
 	    <script type="text/javascript" src="libs/terminal/jquery.terminal.min.js"></script>
 	    <!-- waypoints -->
 	    <script type="text/javascript" src="libs/waypoints/waypoints.min.js"></script>
+	    <!-- ticker -->
+	    <script type="text/javascript" src="libs/ticker/ticker.js"></script>
+	    <!--counter -->
+		<script type="text/javascript" src="libs/countUp/countUp.min.js"></script>
 	    <!-- main js -->	    
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			//<![CDATA[
+			$(".ticker").airport([ "creating web sites","to stand out from the crowd","drinking cups of tea"  ]);
+ 			//<![CDATA[	
+ 		</script>
 		
 	</body>
 </html>
