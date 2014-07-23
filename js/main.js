@@ -36,8 +36,8 @@ $(document).ready(function(){
 $(function() {
         $('.chart').easyPieChart({
            scaleColor: false,
-           lineWidth: 10,
-           size: 180,
+           lineWidth: 2,
+           size: 200,
            lineCap: "square",
         });
 });
