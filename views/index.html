@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+{% block content %}
+		
+		{% include 'intro.html' %}
+		{% include 'about.html' %}
+		{% include 'services.html' %}
+		{% include 'skills.html' %}
+		{% include 'work.html' %}
+		{% include 'contact.html' %}
+				
+		{% block javascript %}
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script type="text/javascript" src="libs/jquery/jquery-2.1.1.min.js"><\/script>')</script>
+		<!--bootstrap scripts-->
+		<script type="text/javascript" src="libs/bootstrap/bootstrap.min.js"></script>
+	    <!--Pie Charts scripts-->
+	    <script type="text/javascript" src="libs/piechart/jquery.easypiechart.min.js"></script>
+	    
+		<!--Skrollr scripts-->
+		<script type="text/javascript" src="libs/skrollr/skrollr.min.js"></script>
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="libs/skrollr/skrollr.ie.min.js"></script>
+		<![endif]-->	
+		<!--Text Rotator scripts-->
+		<script type="text/javascript" src="libs/text_rotator/simpletextrotator.min.js"></script>	
+		<!--Isotope scripts-->
+		<script type="text/javascript" src="libs/isotope/isotope.pkgd.min.js"></script>
+		<!--Terminal scripts-->
+	    <script type="text/javascript" src="libs/terminal/jquery.mousewheel-min.js"></script>
+	    <script type="text/javascript" src="libs/terminal/jquery.terminal.min.js"></script>
+	    <!-- waypoints -->
+	    <script type="text/javascript" src="libs/waypoints/waypoints.min.js"></script>
+	    <!-- ticker -->
+	    <script type="text/javascript" src="libs/ticker/ticker.js"></script>
+	    <!-- modals -->
+	    <script type="text/javascript" src="libs/modals/modals.js"></script>
+	    <!--counter -->
+		<script type="text/javascript" src="libs/countUp/countUp.min.js"></script>
+	    <!-- main js -->	    
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			//<![CDATA[
+			$(".ticker").airport([ "creating web sites","to stand out from the crowd","drinking cups of tea"  ]);
+ 			//<![CDATA[	
+ 		</script>
+ 		{% endblock javascript %}
+ 	</body>
+</html>
+{% endblock content%}

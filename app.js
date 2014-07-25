@@ -6,7 +6,7 @@ var app = express();
 app.engine('html', swig.renderFile);
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
-
+app.use(express.static(process.cwd() + '/public'));
 app.get('/', function(res, res){
     res.render('index');
 });
