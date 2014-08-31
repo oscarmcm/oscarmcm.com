@@ -27,11 +27,15 @@ var s = skrollr.init({
 }); 
 //text-rotate
 $(document).ready(function(){
-            $(".text .rotate").textrotator({
+    $(".text .rotate").textrotator({
         animation: "flipUp",
         speed: 1000
-        });
+    });
+    //navbar
+    $('#top').waypoint('sticky');
 });
+
+
 //piechart
 $(function() {
         $('.chart').easyPieChart({
