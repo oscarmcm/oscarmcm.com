@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		{% block meta %}
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="HandheldFriendly" content="True">
+	    <meta name="MobileOptimized" content="320">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-touch-fullscreen" content="yes"/>
+	    <title>oscarmcm.com</title>
+	    <meta name="description" content="Personal Site Of Oscar Martin Cortez Martinez">
+	    <meta name="author" content="Oscar Martin Cortez Martinez">
+	    <meta name="keywords" content="Site, Skrollr, Portafolio">
+	    {% endblock meta %}
+
+	    {% block css %}
+	    <link rel="stylesheet" type="text/css" href="css/main.css">
+	    <link rel="stylesheet" type="text/css" href="libs/text_rotator/simpletextrotator.css">
+	    <link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap.min.css">  
+	    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	    {% endblock css%}
+	</head>
+	<body data-spy="scroll" data-target=".navbar">
+		{% block content %}{% endblock %}
+	
