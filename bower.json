@@ -1,0 +1,17 @@
+{
+  "name": "oscarmcm.com",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "latest",
+    "materialize": "latest",
+    "jquery": "latest",
+    "font-awesome": "latest"
+  },
+  "directory": "components",
+  "homepage": "www.oscarmcm.com",
+  "authors": [
+    "Oscar Cortez"
+  ],
+  "license": "MIT"
+}
+
