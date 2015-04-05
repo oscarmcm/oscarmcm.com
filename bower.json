@@ -2,16 +2,38 @@
   "name": "oscarmcm.com",
   "version": "0.0.1",
   "dependencies": {
+    "Counter-Up": "git@github.com:bfintal/Counter-Up.git#~1.0.0",
     "bootstrap": "latest",
     "materialize": "latest",
     "jquery": "latest",
-    "font-awesome": "latest"
+    "font-awesome": "latest",
+    "WOW": "latest",
+    "waypoints": "latest"
   },
   "directory": "components",
   "homepage": "www.oscarmcm.com",
   "authors": [
     "Oscar Cortez"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "description": "personal material design site",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "material",
+    "design",
+    "personal",
+    "profile",
+    "developer",
+    "responsive"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
-
