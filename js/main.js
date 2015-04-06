@@ -1,6 +1,6 @@
 $('.button-collapse').sideNav({
-    menuWidth: 300, // Default is 240
-    edge: 'right', // Choose the horizontal origin
+    menuWidth: 240, // Default is 240
+    edge: 'left', // Choose the horizontal origin
     closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
   }
 );
@@ -8,4 +8,6 @@ $('.button-collapse').sideNav({
 $(document).ready(function(){
   $('#scrollspy').scrollSpy();
   $('.counter').counterUp();
+  height = $(window).height();
+  $('#main').css("height", height);
 });
