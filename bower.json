@@ -8,7 +8,8 @@
     "jquery": "latest",
     "font-awesome": "latest",
     "WOW": "latest",
-    "waypoints": "latest"
+    "waypoints": "latest",
+    "isotope": "latest"
   },
   "directory": "components",
   "homepage": "www.oscarmcm.com",
