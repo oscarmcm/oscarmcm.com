@@ -10,8 +10,6 @@
     "WOW": "latest",
     "waypoints": "latest",
     "isotope": "latest",
-    "webcomponentsjs": "latest",
-    "polymer": "Polymer/polymer#~0.5.2"
   },
   "directory": "components",
   "homepage": "www.oscarmcm.com",

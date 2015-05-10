@@ -50,13 +50,10 @@
     <link rel="apple-touch-icon" sizes="57x57" href="" />
     <link rel="apple-touch-icon" sizes="72x72" href="" />
     <link rel="apple-touch-icon" sizes="114x114" href="" />
-
-    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
-
-    <link rel="import" href="bower_components/polymer/polymer.html">    
+    
     <link rel="stylesheet" type="text/css" href="bower_components/materialize/dist/css/materialize.min.css" media="screen,projection">
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
-    <link rel="import" href="templates/project_list.html">
+
 
   </head>
   <body>
@@ -163,9 +160,6 @@
             <a data-filter=".mobile">Mobile</a>
           </div>
         </div>
-        <template is="auto-binding" repeat="{{ obj in projects }}">
-          <project-list type="{{ obj.type }}" src="{{ obj.src }}"></project-list>
-        </template>
         <div class="row js-project-container">
           <div class="col s4 web">
             <img src="">
