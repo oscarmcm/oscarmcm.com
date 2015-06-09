@@ -283,8 +283,8 @@ module.exports = function (grunt) {
     buildcontrol: {
       dist: {
         options: {
-          remote: 'gh-pages',
-          branch: 'master',
+          remote: 'git@github.com:oscarmcm/oscarmcm.com.git',
+          branch: 'gh-pages',
           commit: true,
           push: true
         }
