@@ -42,3 +42,4 @@ node_modules
 .ruby-version
 .ruby-gemset
 .rvmrc
+_site
