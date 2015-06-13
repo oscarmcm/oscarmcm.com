@@ -9,6 +9,8 @@ author:
   name: oscarmcm.com
   email: om.cortez.2010@gmail.com
 
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
+url: "http://localhost:8000" # the base hostname & protocol for your site
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
           '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
@@ -18,6 +20,23 @@ include: ['.htaccess']
 # _config.build.yml sets future and show_drafts to false on `grunt build`
 future: true
 show_drafts: true
+
+
+# Layout settings
+header_type: default  # values [ drawer, default ]
+post_type: highlight    # values [ highlight, default ]
+pagination_type: default  # values [ ops, default ]
+
+more_vert:
+  option1:
+    name: Cool Option 1
+    link: www.myawesomelink.com
+  option2:
+    name: Cool Option 2
+    link: www.myawesomelink.com
+  option3:
+    name: Cool Option 3
+    link: www.myawesomelink.com
 
 # Markdown library
 markdown: kramdown
