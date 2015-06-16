@@ -3,7 +3,7 @@
 # 2. config.build.yml
 # 3. config.yml
 
-name: oscarmcm.com
+title: oscarmcm.com
 description: oscarmcm.com
 author:
   name: oscarmcm.com
@@ -11,6 +11,7 @@ author:
 
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "http://localhost:8000" # the base hostname & protocol for your site
+
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
           '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
@@ -24,8 +25,9 @@ show_drafts: true
 
 # Layout settings
 header_type: default  # values [ drawer, default ]
-post_type: highlight    # values [ highlight, default ]
+post_type: default    # values [ highlight, default ]
 pagination_type: default  # values [ ops, default ]
+paginate_by: 1
 
 more_vert:
   option1:
