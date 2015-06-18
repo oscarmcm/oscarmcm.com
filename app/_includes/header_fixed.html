@@ -28,10 +28,6 @@
 <div class="mdl-layout__drawer">
   <span class="mdl-layout-title"><a href="{{ site.url }}">{{ site.title }}</a></span>
   <nav class="mdl-navigation">
-    {% for page in site.pages %}
-      {% if page.title %}
-    <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      {% endif %}
-    {% endfor %}
+    <a class="mdl-navigation__link" href="{{ site.url}}#home">Home</a>
   </nav>
 </div>
