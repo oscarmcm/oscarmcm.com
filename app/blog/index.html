@@ -40,8 +40,6 @@ layout: default
 
   {% else %}
 
-    <div class="mdl-grid" id="js-post-container" data-page="{{ currentPage }}" data-total-pages="{{ paginator.total_pages }}">
-
     {% if paginator.page %}
       {% assign offset = paginator.page | minus:1 | times:paginator.per_page %}
       {% assign currentPage = paginator.page %}
@@ -49,6 +47,8 @@ layout: default
       {% assign offset = 0 %}
       {% assign currentPage = 1 %}
     {% endif %}
+
+    <div class="mdl-grid" id="js-post-container" data-page="{{ currentPage }}" data-total-pages="{{ paginator.total_pages }}">
 
     {% for post in site.posts limit:site.paginate offset:offset %}
 
@@ -81,14 +81,15 @@ layout: default
 
     {% endfor %}
 
-    {% assign postCount = site.posts | size %}
-    {% assign postsCovered = site.paginate | plus:offset %}
-    {% if postsCovered < postCount %}
-      <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="js-load-more">
-        <i class="material-icons">add</i>
-      </button>
-    {% endif %}
-
   {% endif %}
   </div>
+
+  {% assign postCount = site.posts | size %}
+  {% assign postsCovered = site.paginate | plus:offset %}
+  {% if postsCovered < postCount %}
+  <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" id="js-load-more">
+    <i class="material-icons">add</i>
+  </button>
+  {% endif %}
+
 </div>

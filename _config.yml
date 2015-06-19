@@ -9,8 +9,8 @@ author:
   name: oscarmcm.com
   email: om.cortez.2010@gmail.com
 
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
-url: "http://localhost:8000" # the base hostname & protocol for your site
+# baseurl: "/blog" # the subpath of your site, e.g. /blog/
+# url: "http://localhost:8000" # the base hostname & protocol for your site
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
@@ -27,7 +27,7 @@ show_drafts: true
 header_type: default  # values [ drawer, default ]
 post_type: default    # values [ highlight, default ]
 pagination_type: default  # values [ ops, default ]
-paginate_by: 1
+paginate: 1
 
 more_vert:
   option1:

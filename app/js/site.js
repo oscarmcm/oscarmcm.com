@@ -6,7 +6,7 @@ var HttpClient = function() {
     this.get = function(Url, Callback) {
         var HttpRequest = new XMLHttpRequest();
         HttpRequest.onreadystatechange = function() {
-            if (HttpRequest.readyState == 4 && HttpRequest.status == 200)
+            if (HttpRequest.readyState === 4 && HttpRequest.status === 200)
                 Callback(HttpRequest.responseText);
         };
 
@@ -36,6 +36,7 @@ function loadMorePosts() {
     Client = new HttpClient();
     Client.get('/page' + nextPage, function(data) {
         parser = new DOMParser();
+        console.log(data);
         var htmlData = parser.parseFromString(data, "text/html");
         var articles = htmlData.getElementsByTagName("article");
         blogContainer.parentNode.insertBefore(articles[0], blogContainer.nextSibling);
