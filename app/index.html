@@ -1,119 +1,321 @@
 ---
 layout: none
 ---
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>oscarmcm.com | Developer </title>
-
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
-
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Material Design Lite">
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!-- build:css({app,.tmp}) /css/main.css -->
-    <link rel="stylesheet" tyep="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/_bower_components/material-design-lite/material.min.css">
+    <link rel="stylesheet" href="/css/main.css">
     <!-- endbuild -->
+    <script src="/_bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/_bower_components/particles.js/particles.min.js"></script>
+    
+    <script type="text/javascript">
+      //<![CDATA[
+      $(window).load(function() {
+        $("body").removeClass("loading");
+      })
+      //]]>
+    </script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-  <body>
-    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-
-      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-
-        <header class="demo-drawer-header">
-          <img src="/img/oscar-calm.jpg" class="usr-avatar">
-          <div class="demo-avatar-dropdown">
-            <span>Oscar Cortez</span>
-          </div>
-        </header>
-
-        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-          <a class="mdl-navigation__link" href="#home"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-          <a class="mdl-navigation__link" href="#about"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>About</a>
-          <a class="mdl-navigation__link" href="#skills"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Skills</a>
-          <a class="mdl-navigation__link" href="#projects"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Projects</a>
-          <a class="mdl-navigation__link" href="/blog/"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Blog</a>
-          <a class="mdl-navigation__link" href="#contact"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Contact</a>
-        </nav>
-
+  <body class="home devant">
+    <nav id="">
+      <svg class="nav done enable" id="right" width="32px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <desc>Created with Snap</desc>
+        <defs></defs>
+        <circle cx="50%" cy="50%" r="15" fill="none" stroke="#e8e8e0" style="stroke-width: 3px;"></circle>
+        <path d="M16.07,14.475 c-1.638-1.551-2.66-2.467-4.15-4.07c-1.491-1.603,0.559-4.789,2.953-2.713c2.953,2.474,7.022,6.305,7.022,6.305s2.154,1.597,0,3.672 c-2.154,2.074-5.263,5.026-6.704,6.623c-1.44,1.596-5.107,0.319-3.271-2.474c4.479-4.7,4.479-4.7,4.479-4.7 S17.707,16.026,16.07,14.475z" fill="none" stroke="#e8e8e0" style="stroke-width: 2px;"></path>
+      </svg>
+      <svg class="nav done" id="bottom" width="32px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <desc>Created with Snap</desc>
+        <defs></defs>
+        <circle cx="50%" cy="50%" r="15" fill="none" stroke="#e8e8e0" style="stroke-width: 3px;"></circle>
+        <path d="M17.526,15.937 c1.551-1.638,2.467-2.661,4.07-4.151c1.603-1.491,4.788,0.559,2.713,2.953c-2.474,2.954-6.305,7.023-6.305,7.023 s-1.596,2.154-3.671,0c-2.074-2.154-5.026-5.263-6.623-6.704c-1.596-1.441-0.319-5.108,2.474-3.272c4.7,4.479,4.7,4.479,4.7,4.479 S15.976,17.573,17.526,15.937z" fill="none" stroke="#e8e8e0" style="stroke-width: 2px;"></path>
+      </svg>
+      <svg class="nav done" id="left" width="32px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <desc>Created with Snap</desc>
+        <defs></defs>
+        <circle cx="50%" cy="50%" r="15" fill="none" stroke="#e8e8e0" style="stroke-width: 3px;"></circle>
+        <path d="M16.063,17.524 c1.638,1.551,2.661,2.467,4.151,4.07c1.491,1.603-0.559,4.788-2.953,2.713c-2.954-2.474-7.023-6.305-7.023-6.305 s-2.154-1.596,0-3.671c2.154-2.074,5.263-5.026,6.704-6.623c1.441-1.596,5.108-0.319,3.272,2.474c-4.479,4.7-4.479,4.7-4.479,4.7 S14.426,15.974,16.063,17.524z" fill="none" stroke="#e8e8e0" style="stroke-width: 2px;"></path>
+      </svg>
+      <svg class="nav done" id="top" width="32px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <desc>Created with Snap</desc>
+        <defs></defs>
+        <circle cx="50%" cy="50%" r="15" fill="none" stroke="#e8e8e0" style="stroke-width: 3px;"></circle>
+        <path d="M14.476,16.062 c-1.551,1.639-2.467,2.661-4.07,4.151c-1.603,1.491-4.788-0.559-2.713-2.953c2.474-2.954,6.305-7.023,6.305-7.023 s1.596-2.154,3.671,0c2.074,2.154,5.026,5.263,6.623,6.704c1.596,1.441,0.319,5.108-2.474,3.272c-4.7-4.479-4.7-4.479-4.7-4.479 S16.026,14.425,14.476,16.062z" fill="none" stroke="#e8e8e0" style="stroke-width: 2px;"></path>
+      </svg>
+    </nav>
+    <section id="home" class="done">
+      <h1>Oscar Cortez <br><small>Developer</small></h1>
+      <!-- <svg id="home_animation" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs></defs>
+        <circle cx="30%" cy="50%" r="55" style="opacity: 0; stroke-width: 4px;" fill="none" stroke="#e8e8e0"></circle>
+        <circle cx="60%" cy="45%" r="75" style="opacity: 0; stroke-width: 4px;" fill="none" stroke="#e8e8e0"></circle>
+        <circle cx="70%" cy="55%" r="45" style="opacity: 0; stroke-width: 4px;" fill="none" stroke="#e8e8e0"></circle>
+        <circle cx="53%" cy="52%" r="19.3" style="opacity: 1; stroke-width: 4px;" fill="none" stroke="#e8e8e0"></circle>
+        <circle cx="43%" cy="51%" r="0" style="opacity: 1; stroke-width: 4px;" fill="none" stroke="#e8e8e0"></circle>
+      </svg> -->
+      <svg id="home_to_profile" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs></defs>
+      </svg>
+    </section>
+    <svg id="profile_to_home" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <defs></defs>
+    </svg>
+    <div class="img_principale">
+      <svg id="profile_img" width="120" height="120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <mask id="Sif8g2508r">
+            <rect x="60" y="0" width="60" height="120" fill="#eecf75"></rect>
+          </mask>
+          <rect width="119.532px" height="10" class="svg---mgr"></rect>
+          <mask id="Sif8g25081p">
+            <circle cx="80" cy="0" r="150" fill="#ffffff"></circle>
+          </mask>
+          <mask id="Sif8g25081s">
+            <circle cx="80" cy="0" r="150" fill="#ffffff"></circle>
+          </mask>
+          <mask id="Sif8g25081v">
+            <circle cx="0" cy="0" r="200" fill="#ffffff"></circle>
+          </mask>
+          <mask id="Sif8g25081y">
+            <circle cx="40" cy="40" r="200" fill="#ffffff"></circle>
+          </mask>
+          <mask id="Sif8g250821">
+            <circle cx="40" cy="40" r="200" fill="#ffffff"></circle>
+          </mask>
+          <mask id="Sif8g25082b">
+            <rect x="0" y="0" width="360" height="300" fill="#ffffff"></rect>
+          </mask>
+          <mask id="Sif8g25082e">
+            <rect x="0" y="0" width="360" height="300" fill="#ffffff"></rect>
+          </mask>
+          <mask id="Sif8g25082h">
+            <rect x="0" y="255" width="360" height="100" fill="#ffffff"></rect>
+          </mask>
+          <mask id="Sif8g25082k">
+            <rect x="0" y="255" width="360" height="100" fill="#ffffff"></rect>
+          </mask>
+          <mask id="Sif8g25082s">
+            <circle cx="80" cy="0" r="150" fill="#ffffff"></circle>
+          </mask>
+          <mask id="Sif8g25082v">
+            <circle cx="80" cy="0" r="150" fill="#ffffff"></circle>
+          </mask>
+          <mask id="Sif8g25082y">
+            <circle cx="0" cy="0" r="200" fill="#ffffff"></circle>
+          </mask>
+          <mask id="Sif8g250831">
+            <circle cx="40" cy="40" r="200" fill="#ffffff"></circle>
+          </mask>
+          <mask id="Sif8g250834">
+            <circle cx="40" cy="40" r="200" fill="#ffffff"></circle>
+          </mask>
+          <mask id="Sif8g25084v">
+            <rect x="60" y="0" width="60" height="120" fill="#eecf75"></rect>
+          </mask>
+          <mask id="Sif8g250855">
+            <path d="M115.57,92.632H44.43c-4.121,6.554-6.465,14.282-6.465,22.456c0,23.217,18.856,42.105,42.035,42.105 s42.036-18.889,42.036-42.105C122.035,106.914,119.691,99.186,115.57,92.632z" fill="#999999"></path>
+          </mask>
+          <mask id="Sif8g250857">
+            <path d="M115.57,92.632H44.43c-4.121,6.554-6.465,14.282-6.465,22.456c0,23.217,18.856,42.105,42.035,42.105 s42.036-18.889,42.036-42.105C122.035,106.914,119.691,99.186,115.57,92.632z" fill="#999999"></path>
+          </mask>
+          <mask id="Sif8g250859">
+            <path d="M115.57,92.632H44.43c-4.121,6.554-6.465,14.282-6.465,22.456c0,23.217,18.856,42.105,42.035,42.105 s42.036-18.889,42.036-42.105C122.035,106.914,119.691,99.186,115.57,92.632z" fill="#999999"></path>
+          </mask>
+          <mask id="Sif8g25085t">
+            <rect x="60" y="0" width="60" height="120" fill="#eecf75"></rect>
+          </mask>
+          <mask id="Sif8g250863">
+            <path d="M115.57,92.632H44.43c-4.121,6.554-6.465,14.282-6.465,22.456c0,23.217,18.856,42.105,42.035,42.105 s42.036-18.889,42.036-42.105C122.035,106.914,119.691,99.186,115.57,92.632z" fill="#999999"></path>
+          </mask>
+          <mask id="Sif8g250865">
+            <path d="M115.57,92.632H44.43c-4.121,6.554-6.465,14.282-6.465,22.456c0,23.217,18.856,42.105,42.035,42.105 s42.036-18.889,42.036-42.105C122.035,106.914,119.691,99.186,115.57,92.632z" fill="#999999"></path>
+          </mask>
+          <mask id="Sif8g250867">
+            <path d="M115.57,92.632H44.43c-4.121,6.554-6.465,14.282-6.465,22.456c0,23.217,18.856,42.105,42.035,42.105 s42.036-18.889,42.036-42.105C122.035,106.914,119.691,99.186,115.57,92.632z" fill="#999999"></path>
+          </mask>
+        </defs>
+      </svg>
+    </div>
+    <section id="profile" class="">
+      <div class="principale">
+        <h2>About me</h2>
+        <p>I'm a 20 years old System Engineer from Nicaragua. I love solving problems with a text editor and compiler and enjoy build apps with a potent backend, a sutil frontend, living in a robust cloud. Open source rocks, so I like to spend time writing code and contributing in many projects.</p>
       </div>
-
-      <main class="mdl-layout__content mdl-color--grey-100">
-
-        <div id="home">
-          <img src="/img/oscar-calm.jpg" class="home-profile">
+      <div class="sub_profile ecouter">
+        <div class="svg">
+          <img src="/img/ecouter.svg" alt="">
         </div>
-
-        <div id="about">
-        </div>
-
-        <div class="mdl-grid demo-content" id="skills">
-          <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan></text>
-            </svg>
-            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>
-            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>
-            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>
-          </div>
-
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
-            <defs>
-              <mask id="piemask" maskContentUnits="objectBoundingBox">
-                <circle cx=0.5 cy=0.5 r=0.49 fill="white" />
-                <circle cx=0.5 cy=0.5 r=0.40 fill="black" />
-              </mask>
-              <g id="piechart">
-                <circle cx=0.5 cy=0.5 r=0.5 />
-                <path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)" />
-              </g>
-            </defs>
+        <h3><small>I love </small>music</h3>
+        <p>rock, instrumental, indie, electronica... <br>If I do not write code I enjoy time with my guitar</p>
+      </div>
+      <div class="sub_profile experimenter">
+        <div class="svg">
+          <svg id="experimenter" width="160" height="160" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs></defs>
           </svg>
         </div>
-
-        <div id="projects">
+        <h3><small>I love make some </small>experiments</h3>
+        <p>From large code space rockets to small living scripts<br>
+        Check my experiments in <a href="http://github.com/oscarmcm">Github</a></p>
+      </div>
+      <div class="sub_profile voyager">
+        <div class="svg">
+          <img class="voyager_ns" src="./img/voyagerNS.svg" alt="">
+          <img src="/img/voyager2.svg" alt="">
         </div>
+        <h3><small>Sometimes I </small>travel</h3>
+        <p>I always try to discover something new<br>
+        See my photos in <a href="https://instagram.com/oscar_mcm/">Instagram</a></p>
+      </div>
+    </section>
+    <svg id="savoirfaire_to_profile" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="">
+      <defs></defs>
+    </svg>
+    <svg id="profile_to_savoirfaire" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <defs></defs>
+    </svg>
+    <svg id="big_circle" width="300" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <defs></defs>
+    </svg>
+    <img id="circle_dot" src="/img/circle_dot.svg" alt="">
+    <div id="big_circle_text">
+      <h2><small>My<br></small>Experience</h2>
+      <p>I love projects that challenge me to learn <br>new stuff.</p>
+    </div>
+    <section id="savoir_faire">
+      
+      <h3 class="circle_text front-end">Framework</h3>
+      <h2 class="circle_text html">Django</h2>
+      <h2 class="circle_text css"><small>Express</h2>
+      <h2 class="circle_text js">RoR</h2>
+      
+      <h3 class="circle_text back-end">OS</h3>
+      <h2 class="circle_text cms">iOS</h2>
+      <h2 class="circle_text php">Android</h2>
+      
+      <h3 class="circle_text os"><small>BackEnd</small></h3>
+      <h2 class="circle_text mac">Python</h2>
+      <h2 class="circle_text windows">NodeJS</h2>
+      <h2 class="circle_text ios">GO</h2>
+      <h2 class="circle_text android">Java</h2>
+      
+      <h3 class="circle_text logiciels">FrontEnd</h3>
+      <h2 class="circle_text photoshop">PostCSS</h2>
+      <h2 class="circle_text illustrator">SASS</h2>
+      <h2 class="circle_text after_effect">Polymer</h2>
+      <h2 class="circle_text cinema_4D">React</h2>
+      
+      <svg id="all" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs></defs>
+      </svg>
+      <svg id="front" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs></defs>
+      </svg>
+      <svg id="back" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs></defs>
+      </svg>
+      <svg id="os" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs></defs>
+      </svg>
+      <svg id="logiciels" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs></defs>
+      </svg>
+    </section>
+    <svg id="savoirfaire_to_education" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="">
+      <defs></defs>
+    </svg>
+    <section id="education" class="">
+      <div class="img_principale2">
+        <img id="education_img" src="/img/kronoscode.svg" alt="Kiwi standing on oval">
 
-        <div id="blog">
+        <!-- <svg id="education_img" width="160" height="160" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <defs></defs>
+        </svg> -->
+      </div>
+      <h2>Kronoscode</h2>
+      <p>Currently i'm working for a friendly team from the very center country in America.
+      Focused in efective onlines web apps for all platforms.</p>
+    </section>
+    <section id="realisations">
+      <div class="presentation">
+        <div id="macbook" class="">
+          <img src="/img/me.jpg" alt="oscar_mcm">
         </div>
-
-        <div id="contact">
+        <div class="site" id="vinpai">
+          <h2>That's all for today friends :)</h2>
         </div>
-
-      </main>
+      </div>
+    </section>
+    <!-- <div class="presentation">
+        <svg id="imac" width="360" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <defs></defs>
+        </svg>
+        <div id="macbook" class="">
+          <img class="macbook" src="/img/macbook.svg" alt="">
+          <img class="macbook_bottom" src="/img/macbook_bottom.svg" alt="">
+        </div>
+        <div class="site_imac vinpai">
+          <img src="/img/vinpai_imac.jpg" alt="Vinpai">
+        </div>
+        <img class="site_macbook vinpai" src="/img/vinpai_macbook.png" alt="Vinpai">
+        <img class="site_prez v1" src="/img/v1.png" alt="v1">
+        <img class="site_prez herbak" src="/img/herbak.png" alt="Groupe Her-bak">
+      </div>
+      <div class="site" id="vinpai">
+        <h2>Foo</h2>
+        <p>lorem</p>
+      </div>
+      <div class="site" id="v1">
+        <h2>Bar</h2>
+        <p>Ipsum</p>
+      </div>
+      <div class="site" id="herbak">
+        <h2>Baz</h2>
+        <p>Dolor</p>
+      </div>
+    </section> -->
+    <!--[if lt IE 9|(IE 9)]>
+    <div id="ie">
+      <p>Using an outdated browser makes your computer unsafe. Browse Happy is a way for you to find the latest versions of the major browsers available. You can also find alternative browsers that suit you even better than you are currently using.</p>
+      <p><a href="http://browsehappy.com/?locale=en">Read more</a></p>
+    </div>
+    <![endif]-->
+    <div id="small">
+      <p> Your screen is too small to fully enjoy the site, Please does not hesitate to come back with a larger screen! </p>
+    </div>
+    <div id="mobile">
+      <p> This site is not yet suitable for mobile / tablet, Please does not hesitate to come back with a computer! </p>
     </div>
 
-    <!-- build:js(app) /js/main.js -->
-    <script rel="javascript" type="text/javascript" src="/_bower_components/material-design-lite/material.min.js"></script>
-    <!-- endbuild -->
+    <script type="text/javascript" src="/_bower_components/Snap.svg/dist/snap.svg-min.js" async></script>
+    <script type="text/javascript" src="/_bower_components/jquery-mousewheel/jquery.mousewheel.min.js" async></script>
+    <script type="text/javascript" src="/js/main.js" async></script>
+    <script type="text/javascript">
+      particlesJS.load('home', '/particlesjs-config.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
+    </script>
   </body>
 </html>

@@ -1,34 +1,27 @@
 $(document).ready(function(){
-console.log("Don't hesitate to take the code, he is open source and disordered :p");
-console.log("SCSS is here:");
-console.log("scss/style.scss");
-console.log("scss/_normalize.scss");
-console.log("scss/_sections.scss");
-console.log("scss/_loader.scss");
-console.log("scss/_font.scss");
-console.log("scss/_animate.scss");
 
-if (navigator.userAgent.match(/(android|iphone|ipad|blackberry|symbian|symbianos|symbos|netfront|model-orange|javaplatform|iemobile|windows phone|samsung|htc|opera mobile|opera mobi|opera mini|presto|huawei|blazer|bolt|doris|fennec|gobrowser|iris|maemo browser|mib|cldc|minimo|semc-browser|skyfire|teashark|teleca|uzard|uzardweb|meego|nokia|bb10|playbook)/gi) || navigator.userAgent.match(/ipad/gi)) {
-  $("html").addClass("mobile");
-}
+  if (navigator.userAgent.match(/(android|iphone|ipad|blackberry|symbian|symbianos|symbos|netfront|model-orange|javaplatform|iemobile|windows phone|samsung|htc|opera mobile|opera mobi|opera mini|presto|huawei|blazer|bolt|doris|fennec|gobrowser|iris|maemo browser|mib|cldc|minimo|semc-browser|skyfire|teashark|teleca|uzard|uzardweb|meego|nokia|bb10|playbook)/gi) || navigator.userAgent.match(/ipad/gi)) {
+    $("html").addClass("mobile");
+  }
 
 
-$("#right").click(function(e) {
+  $("#right").click(function(e) {
   var sens = "droite";
   var action = $("body").attr("class");
   detectionDeOuf(sens, action);
   e.preventDefault();
-});
-$("#left").click(function(e) {
+  });
+
+  $("#left").click(function(e) {
   var sens = "gauche";
   var action = $("body").attr("class");
   detectionDeOuf(sens, action);
   e.preventDefault();
-});
+  });
 
-delay=true;
-window.setTimeout(function(){delay=false;}, 3000);
-$(document).keydown(function (evenement){
+  delay=true;
+  window.setTimeout(function(){delay=false;}, 3000);
+  $(document).keydown(function (evenement){
   if(evenement.which == 39){ // Fleche droite
     var sens = "droite";
     var action = $("body").attr("class");
@@ -41,7 +34,7 @@ $(document).keydown(function (evenement){
     detectionDeOuf(sens, action);
   }
   evenement.preventDefault();
-});
+  });
 
 
 $(window).mousewheel(function(event, delta) {
@@ -119,7 +112,7 @@ function detectionDeOuf(sens, action) {
   
 $(window).load(function() {
   window.setTimeout(function(){
-    home();
+    //home();  remove the home animations
 
     var right = Snap("#right");
     var rightCircle = right.circle("50%", "50%", 0).attr({
@@ -199,138 +192,139 @@ $(window).load(function() {
     }, 2000);
   }, 1000);
 })
+
 // --------------------------------------
 //               Home
 // --------------------------------------  
-  
+
+/*
 function home () {
   
-var t1 = Snap("#home_animation");
-var homeCircle1 = t1.circle("30%", "50%", 0);
-var homeCircle2 = t1.circle("60%", "45%", 0);
-var homeCircle3 = t1.circle("70%", "55%", 0);
-var homeCircle4 = t1.circle("53%", "52%", 0);
-var homeCircle5 = t1.circle("43%", "51%", 0);
+  var t1 = Snap("#home_animation");
+  var homeCircle1 = t1.circle("30%", "50%", 0);
+  var homeCircle2 = t1.circle("60%", "45%", 0);
+  var homeCircle3 = t1.circle("70%", "55%", 0);
+  var homeCircle4 = t1.circle("53%", "52%", 0);
+  var homeCircle5 = t1.circle("43%", "51%", 0);
 
-window.setTimeout(function(){animate()}, 1000);
-function animate() {
-  homeCircle1.attr({
-    opacity: 1,
-    r: 0
-  })
-  homeCircle2.attr({
-    opacity: 1,
-    r: 0
-  })
-  homeCircle3.attr({
-    opacity: 1,
-    r: 0
-  })
-  homeCircle4.attr({
-    opacity: 1,
-    r: 0
-  })
-  homeCircle5.attr({
-    opacity: 1,
-    r: 0
-  })
-  window.setTimeout(function(){
+  window.setTimeout(function(){animate()}, 1000);
+  function animate() {
     homeCircle1.attr({
-      fill: "none",
-      stroke: "#e8e8e0",
-      strokeWidth: 4
-    });
-    homeCircle1.animate({
-      r: 50
-    }, 300, mina.easeout, function() {
-      homeCircle1.animate({
-        r: 55,
-        opacity: 0
-      }, 100, function() {
-
-
-      homeCircle2.attr({
+      opacity: 1,
+      r: 0
+    })
+    homeCircle2.attr({
+      opacity: 1,
+      r: 0
+    })
+    homeCircle3.attr({
+      opacity: 1,
+      r: 0
+    })
+    homeCircle4.attr({
+      opacity: 1,
+      r: 0
+    })
+    homeCircle5.attr({
+      opacity: 1,
+      r: 0
+    })
+    window.setTimeout(function(){
+      homeCircle1.attr({
         fill: "none",
         stroke: "#e8e8e0",
         strokeWidth: 4
       });
-      homeCircle2.animate({
-        r: 60
+      homeCircle1.animate({
+        r: 50
       }, 300, mina.easeout, function() {
-        homeCircle2.animate({
-          r: 75,
+        homeCircle1.animate({
+          r: 55,
           opacity: 0
-        }, 100, function () {
+        }, 100, function() {
+
+
+        homeCircle2.attr({
+          fill: "none",
+          stroke: "#e8e8e0",
+          strokeWidth: 4
+        });
+        homeCircle2.animate({
+          r: 60
+        }, 300, mina.easeout, function() {
+          homeCircle2.animate({
+            r: 75,
+            opacity: 0
+          }, 100, function () {
 
 
 
 
-          homeCircle3.attr({
-            fill: "none",
-            stroke: "#e8e8e0",
-            strokeWidth: 4
-          });
-          homeCircle3.animate({
-            r: 30
-          }, 300, function() {
+            homeCircle3.attr({
+              fill: "none",
+              stroke: "#e8e8e0",
+              strokeWidth: 4
+            });
             homeCircle3.animate({
-              r: 45,
-              opacity: 0
-            }, 100, function() {
+              r: 30
+            }, 300, function() {
+              homeCircle3.animate({
+                r: 45,
+                opacity: 0
+              }, 100, function() {
 
 
 
 
 
-              homeCircle4.attr({
-                fill: "none",
-                stroke: "#e8e8e0",
-                strokeWidth: 4
-              });
-              homeCircle4.animate({
-                r: 40
-              }, 400, function() {
+                homeCircle4.attr({
+                  fill: "none",
+                  stroke: "#e8e8e0",
+                  strokeWidth: 4
+                });
                 homeCircle4.animate({
-                  r: 55,
-                  opacity: 0
-                }, 100, function() {
+                  r: 40
+                }, 400, function() {
+                  homeCircle4.animate({
+                    r: 55,
+                    opacity: 0
+                  }, 100, function() {
 
 
 
 
 
 
-                  window.setTimeout(function(){
-                    homeCircle5.attr({
-                      fill: "none",
-                      stroke: "#e8e8e0",
-                      strokeWidth: 4
-                    });
-                    homeCircle5.animate({
-                      r: 20
-                    }, 300, function() {
+                    window.setTimeout(function(){
+                      homeCircle5.attr({
+                        fill: "none",
+                        stroke: "#e8e8e0",
+                        strokeWidth: 4
+                      });
                       homeCircle5.animate({
-                        r: 35,
-                        opacity: 0
-                      }, 100, function(){animate()})
-                    });
-                  }, 1000);
-                })
-              });
+                        r: 20
+                      }, 300, function() {
+                        homeCircle5.animate({
+                          r: 35,
+                          opacity: 0
+                        }, 100, function(){animate()})
+                      });
+                    }, 1000);
+                  })
+                });
 
-            })
-          });
+              })
+            });
+
+          })
+        });
 
         })
       });
-
-      })
-    });
-  }, 2000);
+    }, 2000);
+  }
 }
-
-
-} // FIN home()
+*/
   
 
 function homeToProfile() {
@@ -367,18 +361,11 @@ function homeToProfile() {
     }, 200);
     profile()
   }, 200);
-}// FIN homeToProfile()
+}
 
-  
-
-  
-
-  
 // --------------------------------------
 //                Profile
 // --------------------------------------
-  
-  
   
 function profileToHome() {
   var width = $(window).width();
@@ -407,11 +394,7 @@ function profileToHome() {
       home();
     }, 700);
   });
-}// FIN profileToHome()
-  
-  
-  
-  
+}
   
 function profile() {
   $("body").removeClass("devant");
@@ -454,7 +437,7 @@ function profile() {
     var t2 = Snap("#home_to_profile");
     t2.clear();
     var t1 = Snap("#home_animation");
-    t1.clear();
+    //t1.clear();
     sourir.animate({
       "stroke-dashoffset": 0
     }, 350, function() {
@@ -473,39 +456,39 @@ function profile() {
       }, 400);
     });
   });
+}
 
-}// FIN profile()    
 function profileKey() {
 
-$("#top").click(function(e) {
-  var sens = "haut";
-  var action = $("body").attr("class");
-  detectionProfileDeOuf(sens, action);
-  e.preventDefault();
-});
-$("#bottom").click(function(e) {
-  var sens = "bas";
-  var action = $("body").attr("class");
-  detectionProfileDeOuf(sens, action);
-  e.preventDefault();
-});
-
-$(document).keydown(function (evenement){
-  if(evenement.which == 38){ // Fleche haut
+  $("#top").click(function(e) {
     var sens = "haut";
     var action = $("body").attr("class");
     detectionProfileDeOuf(sens, action);
-  }
-  
-  if(evenement.which == 40){ // Fleche bas
+    e.preventDefault();
+  });
+  $("#bottom").click(function(e) {
     var sens = "bas";
     var action = $("body").attr("class");
     detectionProfileDeOuf(sens, action);
-  }
-  evenement.preventDefault();
-});
+    e.preventDefault();
+  });
 
-} // FIN profileKey()
+  $(document).keydown(function (evenement){
+    if(evenement.which == 38){ // Fleche haut
+      var sens = "haut";
+      var action = $("body").attr("class");
+      detectionProfileDeOuf(sens, action);
+    }
+    
+    if(evenement.which == 40){ // Fleche bas
+      var sens = "bas";
+      var action = $("body").attr("class");
+      detectionProfileDeOuf(sens, action);
+    }
+    evenement.preventDefault();
+  });
+
+}
 
 
 function detectionProfileDeOuf(sens, action) {
@@ -612,28 +595,7 @@ function detectionProfileDeOuf(sens, action) {
     $("body").removeClass("voyager").addClass("experimenter");
     window.setTimeout(function(){delay=false;}, 1500);
   }
-}
-  
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
+} 
     
 // --------------------------------------
 //            Savoir Faire
@@ -669,22 +631,8 @@ function savoirFaireToProfile () {
     $("nav").attr("id", "profile_nav");
     $("#top").attr("class", "nav done enable");
   }, 600);
-} // FIN profileToSavoirFaire()
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+}
+ 
 function profileToSavoirFaire() {
   
   var PtSFSnap = Snap("#profile_to_savoirfaire");
@@ -723,13 +671,7 @@ function profileToSavoirFaire() {
   }, 800);
   savoir_faire(1200);
 
-} // FIN profileToSavoirFaire()
-
-
-
-
-
-
+}
 
 function savoir_faire(delay) {  
   var c1 = Snap("#big_circle");
@@ -970,27 +912,9 @@ function savoir_faire(delay) {
       Logiciels=false;
     }
   }, 2100);
+}
 
-  
-} // FIN savoir_faire()
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
 // --------------------------------------
 //            Education
 // --------------------------------------
@@ -1041,93 +965,83 @@ function SavoirFaireToEducation() {
     $("nav").attr("id", "education_nav");
   }, 100);
 }
-  
-  
-  
-  
+
+
 function education() {
-  var education = Snap("#education_img");
-  var CbasMask = education.circle(80, 0, 50).attr({
-    fill: "#fff",
-  });
-  var Cbas = education.path("M114.311,101.769V75.173H45.725c0,0,0,23.007,0,26.595C44.177,114.858,109.691,121.193,114.311,101.769z").attr({
-    fill: "#252C3C",
-    mask: CbasMask
-  });
+  // var education = Snap("#education_img");
+  // var CbasMask = education.circle(80, 0, 50).attr({
+  //   fill: "#fff",
+  // });
+  // var Cbas = education.path("M114.311,101.769V75.173H45.725c0,0,0,23.007,0,26.595C44.177,114.858,109.691,121.193,114.311,101.769z").attr({
+  //   fill: "#252C3C",
+  //   mask: CbasMask
+  // });
 
-  var Cbas2Mask = education.circle(80, 0, 50).attr({
-    fill: "#fff",
-  });
-  var Cbas2 = education.path("M114.311,96.601V70.005H45.725c0,0,0,23.007,0,26.595C44.177,109.691,109.691,116.025,114.311,96.601z").attr({
-    fill: "#2F4351",
-    mask: Cbas2Mask
-  });
+  // var Cbas2Mask = education.circle(80, 0, 50).attr({
+  //   fill: "#fff",
+  // });
+  // var Cbas2 = education.path("M114.311,96.601V70.005H45.725c0,0,0,23.007,0,26.595C44.177,109.691,109.691,116.025,114.311,96.601z").attr({
+  //   fill: "#2F4351",
+  //   mask: Cbas2Mask
+  // });
 
-  var ChautMask = education.circle(0, 0, 0).attr({
-    fill: "#fff",
-  });
-  var Chaut = education.polygon("0,66.054 80.019,94.632 160.036,66.054 80.019,37.476").attr({
-    fill: "#242c3c",
-    mask: ChautMask
-  });
+  // var ChautMask = education.circle(0, 0, 0).attr({
+  //   fill: "#fff",
+  // });
+  // var Chaut = education.polygon("0,66.054 80.019,94.632 160.036,66.054 80.019,37.476").attr({
+  //   fill: "#242c3c",
+  //   mask: ChautMask
+  // });
 
-  var CribbonMask = education.circle(40, 40, 0).attr({
-    fill: "#fff",
-  });
-  var Cribbon = education.polygon("117.21,81.35 76.975,66.979 82.69,64.938 122.925,79.308").attr({
-    fill: "#E36A5D",
-    mask: CribbonMask
-  });
-  var Cribbon2Mask = education.circle(40, 40, 0).attr({
-    fill: "#fff",
-  });
-  var Cribbon2 = education.polygon("117.21,81.35 117.21,117.422 120.067,113.542 122.925,115.381 122.925,79.308").attr({
-    fill: "#E36A5D",
-    mask: Cribbon2Mask
-  });
+  // var CribbonMask = education.circle(40, 40, 0).attr({
+  //   fill: "#fff",
+  // });
+  // var Cribbon = education.polygon("117.21,81.35 76.975,66.979 82.69,64.938 122.925,79.308").attr({
+  //   fill: "#E36A5D",
+  //   mask: CribbonMask
+  // });
+  // var Cribbon2Mask = education.circle(40, 40, 0).attr({
+  //   fill: "#fff",
+  // });
+  // var Cribbon2 = education.polygon("117.21,81.35 117.21,117.422 120.067,113.542 122.925,115.381 122.925,79.308").attr({
+  //   fill: "#E36A5D",
+  //   mask: Cribbon2Mask
+  // });
 
-  var ChautBoule = education.circle(80, 66, 0).attr({
-    fill: "#2F4351",
-  });
+  // var ChautBoule = education.circle(80, 66, 0).attr({
+  //   fill: "#2F4351",
+  // });
 
-  Cbas2Mask.animate({
-    r: 150
-  }, 700);
-  CbasMask.animate({
-    r: 150
-  }, 700);
+  // Cbas2Mask.animate({
+  //   r: 150
+  // }, 700);
+  // CbasMask.animate({
+  //   r: 150
+  // }, 700);
   
   window.setTimeout(function(){
-    ChautMask.animate({
-      r: 200
-    }, 1100, function() {
-      ChautBoule.animate({
-        r: 3,
-      }, 100);
-      CribbonMask.animate({
-        r: 200
-      }, 1800);
-      Cribbon2Mask.animate({
-        r: 200
-      }, 1800);
+  //   ChautMask.animate({
+  //     r: 200
+  //   }, 1100, function() {
+  //     ChautBoule.animate({
+  //       r: 3,
+  //     }, 100);
+  //     CribbonMask.animate({
+  //       r: 200
+  //     }, 1800);
+  //     Cribbon2Mask.animate({
+  //       r: 200
+  //     }, 1800);
       window.setTimeout(function(){
-        $("#education").addClass("done");
-      }, 1100);
-      window.setTimeout(function(){
-        $("#education").addClass("done2");
-      }, 1200);
-    });
-  }, 200);
-} // FIN education()
-  
-  
-  
-  
-  
-  
-  
-  
-  
+         $("#education").addClass("done");
+       }, 1100);
+       window.setTimeout(function(){
+         $("#education").addClass("done2");
+       }, 1200);
+     });
+  // }, 200);
+}
+
   
 function EducationToSavoirFaire() {
   var width = $(window).width();
@@ -1170,41 +1084,6 @@ function EducationToSavoirFaire() {
     $("nav").attr("id", "savoir_faire_nav");
   }, 1200);
 }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // --------------------------------------
 //            Réalisations
@@ -1248,12 +1127,6 @@ function EducationToRealisations() {
   }, 700);
 }
 
-
-
-
-
-
-
 function RealisationsToEducation() {
   var width = $(window).width();
   var RtE = Snap("#education_to_realisations");
@@ -1289,20 +1162,6 @@ function RealisationsToEducation() {
 	$("#right").attr("class", "nav done enable");
   }, 700);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function realisations () {
@@ -1376,8 +1235,6 @@ function realisations () {
 }
 
 
-
-
 function realisationsKey() {
 
   $("#top").click(function(e) {
@@ -1407,7 +1264,7 @@ function realisationsKey() {
     }
     evenement.preventDefault();
   });
-} // FIN realisationsKey()
+}
 
 
 function detectionRealisationDeOuf(sens, action) {
