@@ -2,8 +2,8 @@
   "name": "oscarmcmcom",
   "version": "1.0.0",
   "dependencies": {
-    "normalize-css": "~3.0.1",
-    "modernizr": "~2.8.3",
-    "material-design-lite": "~1.0.2"
+    "jquery": "~2.1.4",
+    "jquery-mousewheel": "~3.1.13",
+    "Snap.svg": "~0.4.1"
   }
 }
