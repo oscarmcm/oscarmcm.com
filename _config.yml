@@ -23,36 +23,4 @@ future: true
 show_drafts: true
 
 
-# Layout settings
-header_type: default  # values [ drawer, default ]
-post_type: default    # values [ highlight, default ]
-pagination_type: default  # values [ ops, default ]
-paginate: 1
-
-more_vert:
-  option1:
-    name: Cool Option 1
-    link: www.myawesomelink.com
-  option2:
-    name: Cool Option 2
-    link: www.myawesomelink.com
-  option3:
-    name: Cool Option 3
-    link: www.myawesomelink.com
-
-# Markdown library
-markdown: kramdown
-#   auto_ids: true
-#   footnote_nr: 1
-#   entity_output: as_char
-#   toc_levels: 1..6
-#   use_coderay: false
-#   coderay:
-#     coderay_wrap: div
-#     coderay_line_numbers: inline
-#     coderay_line_numbers_start: 1
-#     coderay_tab_width: 4
-#     coderay_bold_every: 10
-#     coderay_css: style
-
 pygments: true
