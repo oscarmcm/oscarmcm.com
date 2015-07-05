@@ -1,8 +1,7 @@
 {
   "name": "oscarmcmcom",
   "private": true,
-  "version": "0.0.0",
-  "description": "Yeoman workflow for oscarmcm.com",
+  "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.5",

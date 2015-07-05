@@ -2,9 +2,7 @@
   "name": "oscarmcmcom",
   "version": "1.0.0",
   "dependencies": {
-    "jquery": "~2.1.4",
-    "jquery-mousewheel": "~3.1.13",
-    "particles.js": "~2.0.0",
-    "Snap.svg": "~0.4.1"
+    "Snap.svg": "~0.4.1",
+    "svg-injector": "~1.1.3"
   }
 }
