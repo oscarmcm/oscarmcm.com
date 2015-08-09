@@ -1,4 +1,17 @@
 .hero {
+  #hero__svg {
 
+    .hero__svg--robot {
+      will-change: transform;
+      animation: move 3s ease infinite;
 
+      @keyframes move {
+        50% {
+         transform: translateY(10px);
+        }
+      }
+
+    }
+
+  }
 }
