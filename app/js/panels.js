@@ -1,8 +1,3 @@
-// Element to inject
-var heroSVG = document.getElementById('hero__svg');
-
-// Do the injection
-SVGInjector(heroSVG);
 
 var Panels = (function() {
 
@@ -35,5 +30,3 @@ var Panels = (function() {
 }());
 
 Panels.init();
-
-
