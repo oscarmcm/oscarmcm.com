@@ -6,9 +6,9 @@
       animation: move 3s ease infinite;
 
       @keyframes move {
-        50% {
-         transform: translateY(10px);
-        }
+        50% { transform: translateY(-10px); }
+        75% { transform: translateY(0px); }
+        100% { transform: translateY(10px); }
       }
 
     }
