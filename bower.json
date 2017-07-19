@@ -1,8 +1,0 @@
-{
-  "name": "oscarmcmcom",
-  "version": "1.0.0",
-  "dependencies": {
-    "Snap.svg": "~0.4.1",
-    "svg-injector": "~1.1.3"
-  }
-}
