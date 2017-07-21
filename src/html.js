@@ -33,7 +33,7 @@ export default class HTML extends React.Component {
           {css}
         </head>
         <body>
-          <div id="container"></div>
+          <div id="container" />
           <div
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }} />
