@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 const BUILD_TIME = new Date().getTime()
 
 export default class HTML extends React.Component {
+
   static propTypes = {
     body: PropTypes.string,
   }
@@ -15,8 +16,7 @@ export default class HTML extends React.Component {
         <style
           dangerouslySetInnerHTML={{
             __html: require("!raw!../public/styles.css"),
-          }}
-        />
+          }} />
       )
     }
 
@@ -27,18 +27,18 @@ export default class HTML extends React.Component {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
+            content="width=device-width, initial-scale=1.0" />
           {this.props.headComponents}
           <link rel="stylesheet" href="https://unpkg.com/wingcss" />
           {css}
         </head>
         <body>
+          <div id="container"></div>
           <div
             id="___gatsby"
-            dangerouslySetInnerHTML={{ __html: this.props.body }}
-          />
+            dangerouslySetInnerHTML={{ __html: this.props.body }} />
           {this.props.postBodyComponents}
+          <script src={__PATH_PREFIX__ + '/nodegarden.js'}></script>
         </body>
       </html>
     )
