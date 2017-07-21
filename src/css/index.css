@@ -42,6 +42,33 @@ body.nightmode .moon:hover {
   fill: #000;
 }
 
+.hide {
+  display: none !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.container-profile,
+#profile,
+#name,
+#twitter {
+  z-index: 2;
+}
+
+.close {
+  font-size: 50px;
+  color: #000000;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.close:hover {
+  transform: rotate(90deg);
+  transition: transform .5s ease-in-out;
+}
+
 #container {
   position: absolute;
   top: 0;
@@ -67,6 +94,16 @@ body.nightmode .moon:hover {
   fill: #fff;
 }
 
+.home-section {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.about-section {
+  display: table-cell;
+  z-index: 2;
+}
+
 #profile {
   width: 300px;
   height: 300px;
@@ -74,12 +111,6 @@ body.nightmode .moon:hover {
   overflow: hidden;
   border: 2px solid #000000;
   transition: border 0.2s ease-in-out;
-}
-
-#profile,
-#name,
-#twitter {
-  z-index: 2;
 }
 
 .container-name {
@@ -113,6 +144,34 @@ body.nightmode .moon:hover {
 .container-name:hover #twitter {
   display: block;
 }
+
+.container-post {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.container-bio {
+  background-color: #044DD1;
+}
+
+.cards {
+  margin: 20px;
+}
+
+.card {
+  background-color: #FFFFFF;
+}
+
+.outline-reversed {
+  margin: 0 auto;
+  background: none;
+  color: #FFFFFF;
+  border: 1.5px solid #FFFFFF;
+}
+
+.outline-reversed:hover {
+  border: 1.5px solid #000000;
+}
+
 
 /* Effect Brackets */
 .link_effect a::before,

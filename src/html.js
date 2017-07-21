@@ -29,7 +29,6 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1.0" />
           {this.props.headComponents}
-          <link rel="stylesheet" href="https://unpkg.com/wingcss" />
           {css}
         </head>
         <body>

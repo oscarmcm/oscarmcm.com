@@ -7,7 +7,6 @@ export default () =>
   <div className="full-screen" style={{display: 'table'}}>
     <div style={{display: 'table-cell', verticalAlign: 'middle'}}>
       <div className="glitch_word_box">
-        <div className="line"></div>
         <h1 id="word" className="glitch_word0">
           404 - Page not found
         </h1>
