@@ -58,7 +58,7 @@ body.nightmode .moon:hover {
 }
 
 .close {
-  font-size: 50px;
+  font-size: 30px;
   color: #000000;
   margin-left: 20px;
   display: inline-block;
@@ -153,6 +153,10 @@ body.nightmode .moon:hover {
   background-color: #044DD1;
 }
 
+.container-chat {
+  height: 90%;
+}
+
 .cards {
   margin: 20px;
 }
@@ -169,6 +173,7 @@ body.nightmode .moon:hover {
 }
 
 .outline-reversed:hover {
+  cursor: pointer;
   border: 1.5px solid #000000;
 }
 
