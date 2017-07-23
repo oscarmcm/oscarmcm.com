@@ -9,6 +9,16 @@ export default class Template extends React.Component {
     children: PropTypes.func
   };
 
+  toggleNightMode() {
+    let bodyClass = document.body.classList;
+    if (bodyClass.contains('nightmode')) {
+      bodyClass.remove('nightmode')
+    } else {
+      bodyClass.add('nightmode');
+    }
+    console.log('Click');
+  }
+
   render() {
     return (
       <div>
@@ -19,6 +29,7 @@ export default class Template extends React.Component {
             { name: "keywords", content: "Developer, Personal" }
           ]} />
         <svg
+          onClick={location.pathname === "/" ? null : this.toggleNightMode}
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           version="1.1" x="0px" y="0px" viewBox="0 0 100 100"

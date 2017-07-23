@@ -134,7 +134,11 @@
     this.nodes.unshift(mouseNode);
 
     this.resize();
-    this.container.appendChild(this.canvas);
+    try {
+      this.container.appendChild(this.canvas);
+    } catch (e) {
+      console.log('f');
+    }
   }
 
   NodeGarden.prototype.start = function() {
@@ -268,7 +272,11 @@
 
   var pixelRatio = window.devicePixelRatio;
   var $container = document.getElementById("container");
-  var $moon = document.getElementsByClassName("moon")[0];
+  try {
+    var $moon = document.getElementsByClassName("moon")[0];
+  } catch (e) {
+    console.log('m');
+  }
 
   var nodeGarden = new NodeGarden($container);
 
@@ -282,23 +290,31 @@
   }
 
   var resetNode = 0;
-
-  $container.addEventListener("click", function(e) {
-    resetNode++;
-    if (resetNode > nodeGarden.nodes.length - 1) {
-      resetNode = 1;
-    }
-    nodeGarden.nodes[resetNode].reset({
-      x: e.pageX * pixelRatio,
-      y: e.pageY * pixelRatio,
-      vx: 0,
-      vy: 0
+  try {
+    $container.addEventListener("click", function(e) {
+      resetNode++;
+      if (resetNode > nodeGarden.nodes.length - 1) {
+        resetNode = 1;
+      }
+      nodeGarden.nodes[resetNode].reset({
+        x: e.pageX * pixelRatio,
+        y: e.pageY * pixelRatio,
+        vx: 0,
+        vy: 0
+      });
     });
-  });
+  } catch (e) {
+    console.log('n');
+  }
 
-  $moon.addEventListener("click", function() {
-    nodeGarden.toggleNightMode();
-  });
+  try {
+    $moon.addEventListener("click", function() {
+      nodeGarden.toggleNightMode();
+    });
+  } catch (e) {
+      console.log('n');
+  }
+
   window.addEventListener("resize", function() {
     nodeGarden.resize();
   });

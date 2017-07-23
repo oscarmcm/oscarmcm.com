@@ -32,10 +32,7 @@ export default class HTML extends React.Component {
           {css}
         </head>
         <body>
-          <div id="container" />
-          <div
-            id="___gatsby"
-            dangerouslySetInnerHTML={{ __html: this.props.body }} />
+          <div id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />
           {this.props.postBodyComponents}
           <script src={__PATH_PREFIX__ + '/nodegarden.js'}></script>
         </body>

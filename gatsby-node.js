@@ -9,7 +9,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
   return new Promise((resolve, reject) => {
     const pages = []
-    const blogPost = path.resolve("./src/templates/blog-post.js")
+    const blogPost = path.resolve('./src/templates/blog-post.js')
     resolve(
       graphql(
         `
@@ -44,10 +44,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       })
     )
     createPage({
-      path: '/pollito',
-      component: path.resolve(`./src/templates/home.js`),
+      path: '/',
+      component: path.resolve('./src/templates/home.js'),
       context: {
-        id: `123456`,
+        id: '123456',
       },
     })
   })

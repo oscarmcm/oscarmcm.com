@@ -79,6 +79,7 @@ body.nightmode .moon:hover {
 }
 
 .moon {
+  z-index: 2;
   position: fixed;
   top: 0rem;
   left: 0rem;
