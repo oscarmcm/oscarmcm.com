@@ -68,6 +68,7 @@ export default class Index extends React.Component {
         end: true,
       },
     ];
+    const { edges: posts } = this.props.data.allMarkdownRemark;
 
     return (
       <div>
@@ -91,7 +92,8 @@ export default class Index extends React.Component {
                       botAvatar={ProfileImg} />
                   :
                     <div>
-                      <PostList />
+                      <h3 className="link_effect text-center"><Link to="blog">Blog</Link></h3>
+                      <PostList posts={posts} />
                       <button
                         className="outline-reversed center"
                         onClick={this.showChat.bind(this)}>
@@ -110,6 +112,24 @@ export default class Index extends React.Component {
     );
   }
 }
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 4) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            path
+            tag
+          }
+        }
+      }
+    }
+  }
+`;
 
 
 // <svg version="1.1" xmlns="http://www.w3.org/2000/svg"

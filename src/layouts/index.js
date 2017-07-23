@@ -16,10 +16,10 @@ export default class Template extends React.Component {
     } else {
       bodyClass.add('nightmode');
     }
-    console.log('Click');
   }
 
   render() {
+    let location = this.props.location;
     return (
       <div>
         <Helmet

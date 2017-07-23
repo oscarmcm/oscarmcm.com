@@ -272,6 +272,7 @@
 
   var pixelRatio = window.devicePixelRatio;
   var $container = document.getElementById("container");
+
   try {
     var $moon = document.getElementsByClassName("moon")[0];
   } catch (e) {
@@ -279,10 +280,10 @@
   }
 
   var nodeGarden = new NodeGarden($container);
-
-  // start simulation
-  nodeGarden.start();
-
+  if ($container) {
+    // start simulation
+    nodeGarden.start();
+  }
   // trigger nightMode automatically
   var date = new Date();
   if (date.getHours() > 18 || date.getHours() < 6) {
